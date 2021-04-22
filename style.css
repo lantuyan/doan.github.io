@@ -184,10 +184,14 @@ img{
     color: #5AACA8;
     font-size: 25px;
     padding: 5px;
+    width: 500px;
+    text-align: left;
+    
 }
 
 .about-charity .point-check li .text-check{
    color:black;
+   font-family: 'Be Vietnam', sans-serif;
 }
 
 
