@@ -200,5 +200,19 @@ img{
 }
 
 
+    /* our-mission */
+    .our-mission .content-number{
+        height: 100px;
+        /* margin: 30px 30px; */
+        /* padding: ; */
+        text-align: center;
+        line-height: 100px;
+    }
+    .our-mission .content-number .number .number{
+       height: 50px;
+       width: 50px;
+        
+        /* padding: ; */
+    }
 
 
