@@ -2,6 +2,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    /* box-sizing: border-box; */
 }
 .col-md-6{
     /* padding:0px;
@@ -18,6 +19,7 @@ img{
 .container-fluid{
     background-color: rgb(237, 243, 248);
     padding: 2% 5%;
+    background-size: cover;
     /* height: 10000px; */
 }
 
@@ -134,8 +136,8 @@ img{
    padding-top:5%;
 }
 .container-content .featurs-card .icon{
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     background-color: #5AACA8;
     border-radius: 10px;
     display: block;
@@ -146,16 +148,36 @@ img{
     opacity: 0.5; */
     display:flex;
 }
+.container-content .featurs-card >.icon1{
+    background-color:#FFF0EA;
+}
+.container-content .featurs-card >.icon2{
+    background-color:#ECE9FE;
+}
+.container-content .featurs-card >.icon3{
+    background-color:#E5F9F7;
+}
 
 .container-content .featurs-card .icon i{
-    font-size: 50px;
+    font-size: 40px;
     color:#FF7468;
     /* background-color: #FEEFE9; */
     border-radius: 10px;
     position: absolute;
-    top:10px;
-    left:10px;
+    top:15px;
+    left:15px;
 }
+.container-content .featurs-card .icon .icon1{
+    color:#FF7468;
+}
+.container-content .featurs-card .icon .icon2{
+    color:#423B7D;
+}
+.container-content .featurs-card .icon .icon3{
+    color:#5AACA8;
+}
+
+
 .container-content .featurs-card h4{
     padding: 5% 0;
     font-weight: 600;
@@ -193,6 +215,72 @@ img{
    color:black;
    font-family: 'Be Vietnam', sans-serif;
 }
+.about-charity .charity-picture{
+    height: 600px;
+    width: 600px;
+    /* background-color:black; */
+    position: relative;
+    /* display: flex; */
+}
+.about-charity .charity-picture .clip{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 150px;
+    /* display: flex; */
+}
+.about-charity .charity-picture .clip.clip1{
+    /* background-color: red; */
+    width: 600px;
+    height: 600px;
+    background-image: url(img/tuthien1.jpg);
+    background-size: cover;
+    clip-path: polygon(50% 0, 100% 0, 56% 100%, 20% 100%);
+}
+.about-charity .charity-picture .clip.clip2{
+    width: 600px;
+    height: 600px;
+    background-image: url(img/tuthien2.jpg);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 56% 100%);
+
+}
+.about-charity .charity-picture .clip.clip3{
+    width: 600px;
+    height: 600px;
+    background-image: url(img/tuthien3.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 50% 0, 20% 100%, 0% 100%);
+
+}
+.about-charity .charity-picture:hover .clip{
+    /* clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); */
+}
+.about-charity .charity-picture .clip:hover{
+   
+    z-index: 1;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    /* transition: ease-in-out; */
+}
+.about-charity .charity-picture .clip .content{
+    /* position: absolute;
+    bottom: -100%;
+    left:0; */
+    margin-top: 400px;
+    margin-left: 90px;
+    width: 70%;
+    padding:20px; 
+    background-color: #fff;
+    opacity:0;
+    border-radius: 50px;
+    /* transition: 0.5s; */
+}
+.about-charity .charity-picture .clip:hover .content{
+    bottom: 0;
+    opacity:0.7;
+}
 
 /* .anh-ung-ho{
     height: 555px;
@@ -224,7 +312,7 @@ img{
     .footer{
         background-color: #EEF4F8;
         background-size: cover;
-        height: 500px;
+        /* height: 500px; */
         background-repeat: no-repeat;
         /* background-color: ; */
     }
@@ -232,7 +320,7 @@ img{
         font-weight: 600;
     }
     .footer-form{
-        height: 60px;px;
+        height: 60px;
     }
     .footer .footer-form .footer-text{
         width: 300px;
@@ -265,6 +353,10 @@ img{
         margin-left: 5px;
         /* box-shadow: none; */
         /* line-height: 60px; */
+    }
+    .footer .col-footer{
+        margin-top: 20px;
+        /* margin-bottom: 10px; */
     }
     .footer li{
         list-style: none;
