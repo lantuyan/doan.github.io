@@ -160,7 +160,7 @@ img{
     padding: 5% 0;
     font-weight: 600;
 }
-.container-content .display-5{
+ .display-5{
     font-weight: 600;
 }
 .container-content .btn-ungho{
@@ -194,10 +194,11 @@ img{
    font-family: 'Be Vietnam', sans-serif;
 }
 
-.anh-ung-ho{
+/* .anh-ung-ho{
     height: 555px;
     width: 455px;
-}
+} */
+
 
 
     /* our-mission */
@@ -211,8 +212,116 @@ img{
     .our-mission .content-number .number .number{
        height: 50px;
        width: 50px;
+       /* padding: 20px; */
         
         /* padding: ; */
     }
+    .hinhvuong{
+        padding: 20px;
+    }
+
+    /* <!-- FOOTER ----------------------------- --> */
+    .footer{
+        background-color: #EEF4F8;
+        background-size: cover;
+        height: 500px;
+        background-repeat: no-repeat;
+        /* background-color: ; */
+    }
+    .footer h5{
+        font-weight: 600;
+    }
+    .footer-form{
+        height: 60px;px;
+    }
+    .footer .footer-form .footer-text{
+        width: 300px;
+        height: 50px;
+        border: none;
+        padding-left: 10px;
+        /* line-height: 60px; */
+
+        background-image: url(img/mail-icon.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+        text-indent: 30px;
+        background-size: 25px;
+        background-position: 10px center ;
+        
+    }
+    .footer .footer-form .footer-text:focus{
+        background-image:none;
+        text-indent:0px;
+        transition: 0.3s;
+    }
+    .footer .footer-form .footer-btn{
+        width: 100px;
+        height: 50px;
+        background-color: #FF685B;
+        border-color: #FF685B;
+        border-radius: 5px;
+        border-color:#FF685B;
+        color: #ffff;
+        margin-left: 5px;
+        /* box-shadow: none; */
+        /* line-height: 60px; */
+    }
+    .footer li{
+        list-style: none;
+        padding-top:15px;
+        opacity:0.7;
+    }
+    .footer li i{
+        color:#FF685B;
+        opacity:0.7;
+    }
+    .footer li a {
+        color: #272C1D;
+        opacity:0.7;
+    }
+    .footer li:hover{
+        letter-spacing: 1px;
+        transition: 0.3s;
+        
+    }
+    .footer li a:hover{
+        text-decoration-line: none;
+        text-shadow: #423B7D;
+        
+    }
+
+
+    .footer .footer-social{
+        display: inline-flex;
+        /* align-items: center; */
+        justify-content: space-between;
+    }
+    .footer .footer-social .social-block{
+        width: 40px;
+        height:40px;
+        justify-content: space-between;
+        margin-right: 15px;
+        border-radius: 10px;
+        background-color: #ffff;
+    }
+    .footer .footer-social .social-block i {
+        font-size: 15px;
+        text-align: center;
+        display: block;
+        line-height: 40px;
+        color: black;
+    }
+    .footer .footer-social .social-block:hover{
+        background-color:#423B7D;
+        text-decoration: none;
+        
+    }
+    .footer .footer-social .social-block i:hover{
+        color:#ffff;
+        transition: 0.3s;
+        
+    }
+
+    
 
 
