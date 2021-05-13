@@ -424,7 +424,7 @@ img{
     color: #fff;
     position: fixed;
     right: 50px;
-    bottom: 25%;
+    bottom: 2%;
     cursor: pointer;
     transition: all .5s;
     visibility: hidden;
@@ -435,14 +435,14 @@ img{
         opacity: 1;
     }
     .box-shadow {
-        box-shadow: 70px 80px 80px 0 rgb(0 0 0 / 20%);
+        box-shadow: 5px 5px 15px 0 rgb(0 0 0 / 20%);
         -webkit-box-shadow: 5px 5px 15px 0 rgb(0 0 0 / 20%);
-        -moz-box-shadow: 60px 60px 60px 0 rgba(0,0,0,.2);
+        -moz-box-shadow: 5px 5px 15px 0 rgba(0,0,0,.2);
     }
     .fa-arrow-up:before {
         content: "\f062";
     }
-    .fa,.fas{
+    .fa{
         font-family:'Font Awesome 5 Free';
         font-weight:900
     }
