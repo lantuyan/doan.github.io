@@ -424,7 +424,7 @@ img{
     color: #fff;
     position: fixed;
     right: 50px;
-    bottom: 2%;
+    bottom: 25%;
     cursor: pointer;
     transition: all .5s;
     visibility: hidden;
