@@ -15,7 +15,8 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
-
+    <!-- <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css?v=1"> -->
+    <!-- <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css?v=1"> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
@@ -99,6 +100,29 @@
            
         </div>
     </div>
+<!--button go to top-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $(window).scroll(function(){
+  var showAfter = 100;
+  if ($(this).scrollTop() > showAfter ) { 
+   $('.go-to-top').fadeIn();
+  } else { 
+   $('.go-to-top').fadeOut();
+  }
+ });
+ $('.go-to-top').click(function(){
+  $('html, body').animate({scrollTop : 0},400);
+  return false;
+ });
+ 
+});
+</script>
+<div class="go-to-top show box-shadow">
+<i class="fas fa-arrow-up"></i>
+</div>
+<!--     end -->
     <div class="container-content our-featurs">
         <div class="row text-center">
            <div class="col">
@@ -171,7 +195,7 @@
                <!-- <img src="img/collap3.1.png" alt="">  -->
 
                 <!-- <div class="anhtuthien1"><img src="img/tuthien.jpg" alt="" class="anh"></div>
-                <div class="anhtuthien2"><img src="img/tuthien1.jpg" alt="" class="anh"></div>
+                <div class="a   nhtuthien2"><img src="img/tuthien1.jpg" alt="" class="anh"></div>
                 <div class="anhtuthien3"><img src="img/tuthien2.jpg" alt="" class="anh"></div> -->
                <!-- </div> -->
 
@@ -180,7 +204,7 @@
                        <div class="content">
                            <h4>CHIẾN DỊCH THU ĐÔNG </h4>
                            <p>Những năm tháng khó khăn năm Mậu Tuất, khi chiến tranh đang nổ ra cũng là lúc những anh hùng ngã xuống. Hình ảnh người dân khó khăn..... </p>
-                       </div>
+                       </div> 
                    </div>
                    <div class="clip clip2">
                     <div class="content">

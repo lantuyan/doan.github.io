@@ -414,6 +414,39 @@ img{
         
     }
 
+    .go-to-top{
+    z-index: 9999;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #2a015b;
+    color: #fff;
+    position: fixed;
+    right: 50px;
+    bottom: 25%;
+    cursor: pointer;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    }
+    .go-to-top.show {
+        visibility: visible;
+        opacity: 1;
+    }
+    .box-shadow {
+        box-shadow: 70px 80px 80px 0 rgb(0 0 0 / 20%);
+        -webkit-box-shadow: 5px 5px 15px 0 rgb(0 0 0 / 20%);
+        -moz-box-shadow: 60px 60px 60px 0 rgba(0,0,0,.2);
+    }
+    .fa-arrow-up:before {
+        content: "\f062";
+    }
+    .fa,.fas{
+        font-family:'Font Awesome 5 Free';
+        font-weight:900
+    }
+    
     
 
 
