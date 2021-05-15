@@ -130,7 +130,7 @@ img{
 
 .container-content p{
     opacity: 0.7;
-    padding-top: 5%;
+    /* padding-top: 5%; */
 }
 .container-content .featurs-card{
    padding-top:5%;
@@ -446,6 +446,84 @@ img{
         font-family:'Font Awesome 5 Free';
         font-weight:900
     }
+    .img-news-left{
+        border-radius: 3%;
+        -moz-border-radius:3%;
+        -webkit-border-radius:3%;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .cal-user-comment li{
+        float: left;
+        padding-right: 91px;
+        font-size: smaller;
+    }
+    .cal-user{
+        /* float: right; */
+        /* font-size: small; */
+ 
+        
+    }
+    .cal-user li{
+        float: left;
+        padding-right: 30px;
+        font-size: small;
+        
+    }
+    .conten-left-end{
+        padding-right: 1px;
+    }
+
+    .content-end{
+       width: 630px;
+       height: 491px;
+       /* border: 1px solid red; */
+    }
+    .content-box{
+        /* padding: 2px 2px; */
+        /* background-color:blanchedalmond; */
+        /* height: max-content; */
+        /* float:right; */
+        float: left;
+        width: 330px;
+        /* background-color: blue; */
+        margin: 19px 10px;
+        
+    }
+    .big-box{
+        background-color: #fbf9f9;
+        height: 890px;
+    }
+    .box-inside{
+        height: 190px;
+        margin: 50px 0px 50px 20px;
+        /* background-color: #F25817; */
+        /* display: flex */
+    }
+    .box-inside img{
+        height: 160px;
+        width: 240px
+
+    }
+    .abc{
+        float:left;
+        margin: 15px 15px;
+    }
+    .btn-primary{
+        color: #fff;
+        background-color: #5aaca8;
+        border-color: #5aaca8;
+        border-radius: 50px;
+        /* margin-top: -20px; */
+    }
+    /* .fi-chevron-right {
+        content: "\e810";
+    } */
+    .ct-left {
+        /* margin-top: px; */
+    }
+    
     
     
 
