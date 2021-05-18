@@ -10,6 +10,12 @@
     <!-- <script defer src="/your-path-to-fontawesome/js/all.js"></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <!-- ---JQuery--- -->
+    <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">        -->
     <!-- <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">     -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> -->
@@ -17,12 +23,11 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
     <!-- <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css?v=1"> -->
     <!-- <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css?v=1"> -->
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -103,7 +108,7 @@
         </div>
     </div>
 <!--button go to top-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 <script>
 $(document).ready(function(){
  $(window).scroll(function(){
@@ -332,6 +337,230 @@ $(document).ready(function(){
             </div>
         </div>
     </div>
+    <!-- SLIDER------------------------------- -->
+    <div class="container-content slider-content">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="display-5 content-title">
+                   Ủng hộ các trường hợp đặc biệt có hoàn cảnh khó khăn
+                </h1>
+                <p>Tổ chức hàng đầu, an tâm tin tưởng những khoản ủng hộ sẽ đến tận tay những người có hoàn cảnh khó khăn.</p>
+            </div>
+            <div class="col-6 text-center div-btn">
+                <button class="btn btn-prev" type="button" id="goToPrevSlide">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <button class="btn btn-next" type="button" id="goToNextSlide">
+                    <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="container-slider">
+            <ul id="autoWidth" class="cs-hidden">
+                <!-- 1------------------------------------------------ -->
+                <li class="item-a">
+                    <div class="box">
+                        <div class="home">
+                            home
+                        </div>
+                        <div class="next">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                        <img src="img/donate-1.jpg" alt="">
+                        <h5>Giúp trẻ em nghèo vùng Trà Giáp</h5>
+                        <p>Cơn bão số 9 vừa qua được ví như cơn nổi giận đại hồng thủy 
+                            để lại...</p>
+                        <div class="money-content">
+                            <section>Tổng: <b>$30,000</b></section>
+                            <section style="text-align: right;">Tiến độ: <b style="color:#5AACA8">$25,000</b></section>
+                        </div>
+                        <div class="progress-bar-tab">
+                            <div class="progress">
+                                <div class="bar"></div> 
+                            </div>
+                            <b>90%</b>
+                        </div>
+                       <div class="footer-box">
+                           <div class="avatar-group">
+                                <div class="avatar"><img src="img/avt1.jpg" alt="" class="avt-img"></div>
+                                <div class="avatar"><img src="img/avt2.jpg" alt=""  class="avt-img"></div>
+                                <div class="avatar"><img src="img/avt3.jpg" alt=""  class="avt-img"></div>  
+                                <div class="hidden-avatar">
+                                    97+
+                                </div>
+                           </div>
+                           <div class="donate-slider">
+                               <button class="donate-btn btn">Ủng hộ</button>
+                           </div>
+                           
+                       </div>
+                       
+                    </div>
+                </li>
+                 <!-- 2------------------------------------------------ -->
+                 <li class="item-a">
+                    <div class="box">
+                        <div class="home">
+                            home
+                        </div>
+                        <div class="next">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                        <img src="img/donate-1.jpg" alt="">
+                        <h5>Giúp trẻ em nghèo vùng Trà Giáp</h5>
+                        <p>Cơn bão số 9 vừa qua được ví như cơn nổi giận đại hồng thủy 
+                            để lại...</p>
+                        <div class="money-content">
+                            <section>Tổng: <b>$30,000</b></section>
+                            <section style="text-align: right;">Tiến độ: <b style="color:#5AACA8">$25,000</b></section>
+                        </div>
+                        <div class="progress-bar-tab">
+                            <div class="progress">
+                                <div class="bar"></div> 
+                            </div>
+                            <b>90%</b>
+                        </div>
+                       <div class="footer-box">
+                           <div class="avatar-group">
+                                <div class="avatar"><img src="img/avt1.jpg" alt="" class="avt-img"></div>
+                                <div class="avatar"><img src="img/avt2.jpg" alt=""  class="avt-img"></div>
+                                <div class="avatar"><img src="img/avt3.jpg" alt=""  class="avt-img"></div>  
+                                <div class="hidden-avatar">
+                                    97+
+                                </div>
+                           </div>
+                           <div class="donate-slider">
+                               <button class="donate-btn btn">Ủng hộ</button>
+                           </div>
+                           
+                       </div>
+                       
+                    </div>
+                </li>
+                 <!-- 3------------------------------------------------ -->
+                 <li class="item-a">
+                    <div class="box">
+                        <div class="home">
+                            home
+                        </div>
+                        <div class="next">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                        <img src="img/donate-1.jpg" alt="">
+                        <h5>Giúp trẻ em nghèo vùng Trà Giáp</h5>
+                        <p>Cơn bão số 9 vừa qua được ví như cơn nổi giận đại hồng thủy 
+                            để lại...</p>
+                        <div class="money-content">
+                            <section>Tổng: <b>$30,000</b></section>
+                            <section style="text-align: right;">Tiến độ: <b style="color:#5AACA8">$25,000</b></section>
+                        </div>
+                        <div class="progress-bar-tab">
+                            <div class="progress">
+                                <div class="bar"></div> 
+                            </div>
+                            <b>90%</b>
+                        </div>
+                       <div class="footer-box">
+                           <div class="avatar-group">
+                                <div class="avatar"><img src="img/avt1.jpg" alt="" class="avt-img"></div>
+                                <div class="avatar"><img src="img/avt2.jpg" alt=""  class="avt-img"></div>
+                                <div class="avatar"><img src="img/avt3.jpg" alt=""  class="avt-img"></div>  
+                                <div class="hidden-avatar">
+                                    97+
+                                </div>
+                           </div>
+                           <div class="donate-slider">
+                               <button class="donate-btn btn">Ủng hộ</button>
+                           </div>
+                           
+                       </div>
+                       
+                    </div>
+                </li>
+                 <!-- 4------------------------------------------------ -->
+                 <li class="item-a">
+                    <div class="box">
+                        <div class="home">
+                            home
+                        </div>
+                        <div class="next">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                        <img src="img/donate-1.jpg" alt="">
+                        <h5>Giúp trẻ em nghèo vùng Trà Giáp</h5>
+                        <p>Cơn bão số 9 vừa qua được ví như cơn nổi giận đại hồng thủy 
+                            để lại...</p>
+                        <div class="money-content">
+                            <section>Tổng: <b>$30,000</b></section>
+                            <section style="text-align: right;">Tiến độ: <b style="color:#5AACA8">$25,000</b></section>
+                        </div>
+                        <div class="progress-bar-tab">
+                            <div class="progress">
+                                <div class="bar"></div> 
+                            </div>
+                            <b>90%</b>
+                        </div>
+                       <div class="footer-box">
+                           <div class="avatar-group">
+                                <div class="avatar"><img src="img/avt1.jpg" alt="" class="avt-img"></div>
+                                <div class="avatar"><img src="img/avt2.jpg" alt=""  class="avt-img"></div>
+                                <div class="avatar"><img src="img/avt3.jpg" alt=""  class="avt-img"></div>  
+                                <div class="hidden-avatar">
+                                    97+
+                                </div>
+                           </div>
+                           <div class="donate-slider">
+                               <button class="donate-btn btn">Ủng hộ</button>
+                           </div>
+                           
+                       </div>
+                       
+                    </div>
+                </li>
+                 <!-- 5------------------------------------------------ -->
+                 <li class="item-a">
+                    <div class="box">
+                        <div class="home">
+                            home
+                        </div>
+                        <div class="next">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                        <img src="img/donate-1.jpg" alt="">
+                        <h5>Giúp trẻ em nghèo vùng Trà Giáp</h5>
+                        <p>Cơn bão số 9 vừa qua được ví như cơn nổi giận đại hồng thủy 
+                            để lại...</p>
+                        <div class="money-content">
+                            <section>Tổng: <b>$30,000</b></section>
+                            <section style="text-align: right;">Tiến độ: <b style="color:#5AACA8">$25,000</b></section>
+                        </div>
+                        <div class="progress-bar-tab">
+                            <div class="progress">
+                                <div class="bar"></div> 
+                            </div>
+                            <b>90%</b>
+                        </div>
+                       <div class="footer-box">
+                           <div class="avatar-group">
+                                <div class="avatar"><img src="img/avt1.jpg" alt="" class="avt-img"></div>
+                                <div class="avatar"><img src="img/avt2.jpg" alt=""  class="avt-img"></div>
+                                <div class="avatar"><img src="img/avt3.jpg" alt=""  class="avt-img"></div>  
+                                <div class="hidden-avatar">
+                                    97+
+                                </div>
+                           </div>
+                           <div class="donate-slider">
+                               <button class="donate-btn btn">Ủng hộ</button>
+                           </div>
+                           
+                       </div>
+                       
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
+
     <!-- Bảng Tin-->
     <div class="about-charity container-content">
         <div class="row">
@@ -535,6 +764,6 @@ $(document).ready(function(){
            
         </div>
     </div>
-    
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
