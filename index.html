@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
     
-
-    <style>body{ overflow-x:hidden;}</style>  <!--fix bug-->
-
+    <style>
+        html,body{
+            /* overflow-x: hidden; */
+        }
+    </style>
     <!-- JQUERY -->
     <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
 
@@ -54,7 +56,7 @@
     </script>
      <!-- Hiệu ứng -->
   
-    <header >
+    <header  >
         <div class="navbar navbar-expand-md container-fluid">
             <a href="#" class="logo">
                CHARITY
@@ -89,7 +91,7 @@
     </header>
     
     <!-- Phần đầu  -->
-    <div class="start-content ">
+    <div class="start-content" style="overflow:hidden ;">
         <div class="d-flex align-items-center content-start" >
             <h1 class="text-center" data-aos="zoom-in" >Chia sẻ</h1>
             <p class="" data-aos="zoom-in">
@@ -104,7 +106,7 @@
         </div>
     </div>
     <!-- Phần 2. FEATURES-->
-    <div class="container features-content">
+    <div class="container features-content" style="overflow-x:hidden ;">
         <div class="col-12 text-center" >
             <h2 data-aos="fade-up" data-aos-duration="1000">Đặc điểm ưu trội của website</h2>
         </div>
@@ -199,7 +201,7 @@
         <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000" >
             <h2>Cơ hội trao đi để nhận lại</h2>
         </div>
-        <div class="row content">
+        <div class="row content" style="overflow-x: hidden">
             <div class="col-12 col-md-6 col-lg-5 content-img" data-aos="slide-right">
             
             </div>
@@ -227,7 +229,7 @@
         </div>
     </div>
     <!-- counter-content  -->
-    <div class="container-fluid counter-content">
+    <div class="container-fluid counter-content" style="overflow-x: hidden">
         <div class="row counter">
             <div class="col-12 col-md-6 counter-left"data-aos="slide-right">
                 <div class="row">
@@ -314,7 +316,7 @@
         </script>
     </div>
     <!-- SLIDER------------------------------- -->
-      <div class="container-content slider-content">
+      <div class="container-content slider-content" style="overflow-x: hidden">
         <div class="row">
             <div class="col-6 title">
                 <h2 data-aos="zoom-in">Ủng hộ các trường hợp có hoàn cảnh khó khăn</h2>
@@ -556,7 +558,7 @@
     </div>
 
     <!-- NEWS - Tin tức  -->
-    <div class="container news" >
+    <div class="container news" style="overflow:hidden ;">
         <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
             <h2>Tin tức mới nhất</h2>
         </div>
@@ -612,7 +614,7 @@
         </div>
     </div>
     <!-- Phần tổ chức  -->
-    <div class="container company-content">
+    <div class="container company-content" style="overflow:hidden ;">
         <div class="company">
             <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
                 <h2>Các tổ chức phi lợi nhuận</h2>
@@ -713,7 +715,7 @@
     </div>
 
     <!-- FOOTER ----------------------------- -->
-    <div class="footer">
+    <div class="footer" style="overflow:hidden ;">
         <div class=" container">
             <div class="row text-center">
                 <div class="col-12">
@@ -726,7 +728,7 @@
                 </div>
             </div>
             <div class="row container-content ">
-                <div class="col-md-5 col-sm-6 col-xs-12 col-footer" data-aos="slide-right">
+                <div class="col-md-5 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
                     <h5>
                         Website
                     </h5>
@@ -758,7 +760,7 @@
                         
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 col-footer" data-aos="slide-right">
+                <div class="col-md-3 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
                     <h5>
                         Địa chỉ liên hệ
                     </h5>
@@ -783,7 +785,7 @@
                         </li> -->
                     </ul>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12 col-footer" data-aos="slide-left">
+                <div class="col-md-2 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
                     <h5>
                         Hợp pháp
                     </h5>
@@ -794,7 +796,7 @@
                         <li> <a href="">Đơn vị phân phối</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12 col-footer" data-aos="slide-left" >
+                <div class="col-md-2 col-sm-6 col-xs-12 col-footer" data-aos="slide-up" >
                     <h5>
                         Về chúng tôi
                     </h5>
@@ -834,38 +836,36 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-       
+   
         $(function() { 
             AOS.init({
         // Global settings:
-            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-            initClassName: 'aos-init', // class applied after initialization
-            animatedClassName: 'aos-animate', // class applied on animation
-            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-            
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
 
-            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-            offset: 120, // offset (in px) from the original trigger point
-            delay: 0, // values from 0 to 3000, with step 50ms
-            duration: 2000, // values from 0 to 3000, with step 50ms
-            easing: 'ease', // default easing for AOS animations
-            once: false, // whether animation should happen only once - while scrolling down
-            mirror: false, // whether elements should animate out while scrolling past them
-            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 2000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
         });
-
-             window.addEventListener('load', AOS.refresh); });
+         window.addEventListener('load', AOS.refresh); });
             
     </script>
    
     </div>
    
-    
 
 
     

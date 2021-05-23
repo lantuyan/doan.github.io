@@ -4,6 +4,7 @@
     margin: 0px;
     /* box-sizing: border-box; */
 }
+
 .col-md-6{
     /* padding:0px;
     margin: 0px; */
@@ -695,6 +696,7 @@ header .navbar .btn-login{
     background-repeat: no-repeat;
     /* background-color: ; */
     padding-top: 35px;
+    padding-bottom: 50px;
 }
 .footer .content-title{
     font-weight: 600;
@@ -709,6 +711,9 @@ header .navbar .btn-login{
 }
 .footer-form{
     height: 60px;
+}
+.footer .container-content{
+    padding-top: 35px;
 }
 .footer .footer-form .footer-text{
     width: 300px;
