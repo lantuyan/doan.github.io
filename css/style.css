@@ -28,7 +28,9 @@ img{
 body{
     overflow-x:hidden;
 }
-
+.container-fluid{
+    padding: 0px;
+}
 
 /* NAVBAR  */
 header{
