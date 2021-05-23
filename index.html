@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
     
-
+    <style>
+        html,body{
+            overflow-x:hidden;
+        }
+    </style>
     <!-- JQUERY -->
     <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
 
@@ -34,7 +38,7 @@
 
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="position: relative;">
             <!-- Animation scroll header - navbar  -->
     <script>
         $(window).on('scroll',function(){
@@ -52,8 +56,8 @@
     </script>
      <!-- Hiệu ứng -->
   
-    <header data-aos="zoom-in-down">
-        <div class="navbar navbar-expand-md ">
+    <header >
+        <div class="navbar navbar-expand-md container-fluid">
             <a href="#" class="logo">
                CHARITY
             </a>
