@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+
+    </style>
+    <!-- JQUERY -->
+    <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+
+    <!-- SLIDER  -->
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    
+    
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Custom  -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+   
+    <!-- Animation scroll  library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <!-- Animation scroll header - navbar  -->
+<script>
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()>20){
+             $('header').addClass('bg-huong');
+             $('header').addClass('animate__fadeInDown animate__animated ');
+        }
+        else{
+            $('header').removeClass('bg-huong');
+            $('header').removeClass('animate__fadeInDown animate__animated ');
+        }
+    });
+    // Chạy chữ
+    
+</script>
+ <!-- Hiệu ứng -->
+
+<header  >
+    <div class="navbar navbar-expand-md container-fluid">
+        <a href="#" class="logo">
+           CHARITY
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Trang chủ</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Ủng hộ</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tin tức</a></li>
+                 <li class="nav-item">
+                    <a href="#" class="nav-link">Liên hệ</a></li>
+                
+            </ul>
+            <ul class="navbar-nav ml-auto" >
+                <li class="nav-item">
+                    <a href="#" class="nav-link btn-login">Login</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-search"></i>
+                    </a></li>
+                
+               
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- Phần đầu  -->
+<div class="start-content" style="overflow:hidden ;">
+    <div class="d-flex align-items-center content-start" >
+        <h1 class="text-center" data-aos="zoom-in" >Chia sẻ</h1>
+        <p class="" data-aos="zoom-in">
+            Giúp đỡ lẫn nhau giữa con người với con người,
+            gửi gấm đi những ước mơ và tương lai cho thế hệ trẻ <br>
+            Sinh ra trong nghèo khó không phải lỗi do chúng ta 
+            nhưng chết trong nghèo khó chính là lỗi do chính bản thân bạn.
+        </p>
+        <button class="btn" data-aos="zoom-out-up" >
+            Tham gia ngay
+        </button>
+    </div>
+</div>
+<!--hết phần đầu-->
+
+<!-- Phần 2. Bảng tin-->
+<div class="container news-html ">
+    <div class="col-12 text-center" >
+        <h2 data-aos="fade-up" data-aos-duration="1000">Tin tức mới nhất</h2>
+    </div>
+    <div class="row">
+        <div class="col-12 box-news">
+            <div class=" col-md-1 post-date" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <span class="published">
+                    <em class="post-date-month">Tháng 12</em>
+                    <em class="post-date-year">2021</em>
+                    <em class="post-date-day">25</em>
+                </span>
+            </div>
+            <div class="col-md-5 post-img " data-aos= "slide-right" >
+                
+            </div>
+            <div class="col-md 6 post-content" data-aos= "slide-left" >
+                <a href="#">
+                    <h4 class="title">Obvious Mistake Smart and Good Parents Commit When Raising Their Kids </h4>
+                </a>
+                <div class="content">
+                    <p>Chính thức khởi động từ ngày 4/8/2020,
+                        chiến dịch “Chung tay cùng Đà Nẵng” đã 
+                        nhanh chóng nhận được sự ủng hộ của đông đảo người dùng Ví MoMo.
+                        Chỉ trong 8 ngày đầu tiên, chiến dịch đã kêu gọi quyên góp thành công 500 triệu đồng,
+                        hoàn thành mục tiêu ban đầu đề ra. </p>
+                </div>
+                <hr>
+                <div class="post-button">
+                    <button class="read-more btn">Đọc thêm</button>
+                    <button class="donate-btn btn">Ủng Hộ</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <hr>
+        <div class="col-12 box-news">
+            <div class=" col-md-1 post-date" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <span class="published">
+                    <em class="post-date-month">Tháng 12</em>
+                    <em class="post-date-year">2021</em>
+                    <em class="post-date-day">25</em>
+                </span>
+            </div>
+            <div class="col-md-5 post-img " data-aos= "slide-right" >
+                
+            </div>
+            <div class="col-md 6 post-content" data-aos= "slide-left" >
+                <a href="#">
+                    <h4 class="title">Obvious Mistake Smart and Good Parents Commit When Raising Their Kids </h4>
+                </a>
+                <div class="content">
+                    <p>Chính thức khởi động từ ngày 4/8/2020,
+                        chiến dịch “Chung tay cùng Đà Nẵng” đã 
+                        nhanh chóng nhận được sự ủng hộ của đông đảo người dùng Ví MoMo.
+                        Chỉ trong 8 ngày đầu tiên, chiến dịch đã kêu gọi quyên góp thành công 500 triệu đồng,
+                        hoàn thành mục tiêu ban đầu đề ra. </p>
+                </div>
+                <hr>
+                <div class="post-button">
+                    <button class="read-more btn">Đọc thêm</button>
+                    <button class="donate-btn btn">Ủng Hộ</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-12 box-news">
+            <div class=" col-md-1 post-date" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <span class="published">
+                    <em class="post-date-month">Tháng 12</em>
+                    <em class="post-date-year">2021</em>
+                    <em class="post-date-day">25</em>
+                </span>
+            </div>
+            <div class="col-md-5 post-img " data-aos= "slide-right" >
+                
+            </div>
+            <div class="col-md 6 post-content" data-aos= "slide-left" >
+                <a href="#">
+                    <h4 class="title">Obvious Mistake Smart and Good Parents Commit When Raising Their Kids </h4>
+                </a>
+                <div class="content">
+                    <p>Chính thức khởi động từ ngày 4/8/2020,
+                        chiến dịch “Chung tay cùng Đà Nẵng” đã 
+                        nhanh chóng nhận được sự ủng hộ của đông đảo người dùng Ví MoMo.
+                        Chỉ trong 8 ngày đầu tiên, chiến dịch đã kêu gọi quyên góp thành công 500 triệu đồng,
+                        hoàn thành mục tiêu ban đầu đề ra. </p>
+                </div>
+                <hr>
+                <div class="post-button">
+                    <button class="read-more btn">Đọc thêm</button>
+                    <button class="donate-btn btn">Ủng Hộ</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-12 box-news">
+            <div class=" col-md-1 post-date" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <span class="published">
+                    <em class="post-date-month">Tháng 12</em>
+                    <em class="post-date-year">2021</em>
+                    <em class="post-date-day">25</em>
+                </span>
+            </div>
+            <div class="col-md-5 post-img " data-aos= "slide-right" >
+                
+            </div>
+            <div class="col-md 6 post-content" data-aos= "slide-left" >
+                <a href="#">
+                    <h4 class="title">Obvious Mistake Smart and Good Parents Commit When Raising Their Kids </h4>
+                </a>
+                <div class="content">
+                    <p>Chính thức khởi động từ ngày 4/8/2020,
+                        chiến dịch “Chung tay cùng Đà Nẵng” đã 
+                        nhanh chóng nhận được sự ủng hộ của đông đảo người dùng Ví MoMo.
+                        Chỉ trong 8 ngày đầu tiên, chiến dịch đã kêu gọi quyên góp thành công 500 triệu đồng,
+                        hoàn thành mục tiêu ban đầu đề ra. </p>
+                </div>
+                <hr>
+                <div class="post-button">
+                    <button class="read-more btn">Đọc thêm</button>
+                    <button class="donate-btn btn">Ủng Hộ</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-12 box-news">
+            <div class=" col-md-1 post-date" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <span class="published">
+                    <em class="post-date-month">Tháng 12</em>
+                    <em class="post-date-year">2021</em>
+                    <em class="post-date-day">25</em>
+                </span>
+            </div>
+            <div class="col-md-5 post-img " data-aos= "slide-right" >
+                
+            </div>
+            <div class="col-md 6 post-content" data-aos= "slide-left" >
+                <a href="#">
+                    <h4 class="title">Obvious Mistake Smart and Good Parents Commit When Raising Their Kids </h4>
+                </a>
+                <div class="content">
+                    <p>Chính thức khởi động từ ngày 4/8/2020,
+                        chiến dịch “Chung tay cùng Đà Nẵng” đã 
+                        nhanh chóng nhận được sự ủng hộ của đông đảo người dùng Ví MoMo.
+                        Chỉ trong 8 ngày đầu tiên, chiến dịch đã kêu gọi quyên góp thành công 500 triệu đồng,
+                        hoàn thành mục tiêu ban đầu đề ra. </p>
+                </div>
+                <hr>
+                <div class="post-button">
+                    <button class="read-more btn">Đọc thêm</button>
+                    <button class="donate-btn btn">Ủng Hộ</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-12 box-news">
+            <div class=" col-md-1 post-date" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <span class="published">
+                    <em class="post-date-month">Tháng 12</em>
+                    <em class="post-date-year">2021</em>
+                    <em class="post-date-day">25</em>
+                </span>
+            </div>
+            <div class="col-md-5 post-img " data-aos= "slide-right" >
+                
+            </div>
+            <div class="col-md 6 post-content" data-aos= "slide-left" >
+                <a href="#">
+                    <h4 class="title">Obvious Mistake Smart and Good Parents Commit When Raising Their Kids </h4>
+                </a>
+                <div class="content">
+                    <p>Chính thức khởi động từ ngày 4/8/2020,
+                        chiến dịch “Chung tay cùng Đà Nẵng” đã 
+                        nhanh chóng nhận được sự ủng hộ của đông đảo người dùng Ví MoMo.
+                        Chỉ trong 8 ngày đầu tiên, chiến dịch đã kêu gọi quyên góp thành công 500 triệu đồng,
+                        hoàn thành mục tiêu ban đầu đề ra. </p>
+                </div>
+                <hr>
+                <div class="post-button">
+                    <button class="read-more btn">Đọc thêm</button>
+                    <button class="donate-btn btn">Ủng Hộ</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-12 box-news">
+            <div class=" col-md-1 post-date" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <span class="published">
+                    <em class="post-date-month">Tháng 12</em>
+                    <em class="post-date-year">2021</em>
+                    <em class="post-date-day">25</em>
+                </span>
+            </div>
+            <div class="col-md-5 post-img " data-aos= "slide-right" >
+                
+            </div>
+            <div class="col-md 6 post-content" data-aos= "slide-left" >
+                <a href="#">
+                    <h4 class="title">Obvious Mistake Smart and Good Parents Commit When Raising Their Kids </h4>
+                </a>
+                <div class="content">
+                    <p>Chính thức khởi động từ ngày 4/8/2020,
+                        chiến dịch “Chung tay cùng Đà Nẵng” đã 
+                        nhanh chóng nhận được sự ủng hộ của đông đảo người dùng Ví MoMo.
+                        Chỉ trong 8 ngày đầu tiên, chiến dịch đã kêu gọi quyên góp thành công 500 triệu đồng,
+                        hoàn thành mục tiêu ban đầu đề ra. </p>
+                </div>
+                <hr>
+                <div class="post-button">
+                    <button class="read-more btn">Đọc thêm</button>
+                    <button class="donate-btn btn">Ủng Hộ</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!--Chuyển trang-->
+    <div class="col-12 next-page">
+        <div class="pagination pagination-style-three m-t-20 box-next-page" data-aos="fade-up">
+        <a href="#">Đầu</a>
+        <a href="#" class="selected">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">...</a>
+        <a href="#">10</a>
+        <a href="#">11</a>
+        <a href="#">12</a>
+        <a href="#">13</a>
+        <a href="#">Cuối</a>
+        </div>
+     </div> 
+     <!--hết chuyển trang-->  
+</div> 
+<!--hết bảng tin----------------------->
+<!--button go to top--------------->
+<script>
+    $(document).ready(function(){
+    $(window).scroll(function(){
+    var showAfter = 1000;
+    if ($(this).scrollTop() > showAfter ) { 
+    $('.go-to-top').fadeIn();
+    } else { 
+    $('.go-to-top').fadeOut();
+    }
+    });
+    $('.go-to-top').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+    });
+    
+    });
+</script>
+<div class="go-to-top show box-shadow">
+<i class="fas fa-arrow-up"></i>
+</div>
+<!--hết button go to top ----------------------------->
+<!-- FOOTER ----------------------------- -->
+<div class="footer" style="overflow:hidden ;">
+    <div class=" container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="display-5 content-title" data-aos="fade-up" data-aos-duration="1000">Đăng kí ngay</h1>
+                <div class="footer-form">
+                    <input type="text" name="" id="" class="footer-text" placeholder="Enter E-Mail Address" data-aos="slide-right">
+                    <button type="submit" value="Đăng kí" class="footer-btn " data-aos="slide-left">Đăng kí </button>
+                </div>
+                    
+            </div>
+        </div>
+        <div class="row container-content ">
+            <div class="col-md-5 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
+                <h5>
+                    Website
+                </h5>
+                <p>Trang web giúp các các nhân tổ chức ủng hộ và quyên góp, tổ chức các hoạt động từ thiện để giúp đỡ bà con nhân dân.</p>
+
+                        <!-- FOOTER SOCIAL    -->
+                <div class="footer-social">
+                    <div class="social-block">
+                        <a href="">
+                            <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="social-block">
+                        <a href="">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="social-block">
+                        <a href="">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="social-block">
+                        
+                    <a href="">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
+                <h5>
+                    Địa chỉ liên hệ
+                </h5>
+                <ul>
+                    <li> 
+                        <i class="fas fa-map-marker-alt"></i> 470 Trần Đại Nghĩa, Hòa Hải, Ngủ Hành Sơn, Đà Nẵng
+                    </li>
+                    <li> 
+                        <i class="fas fa-phone-alt"> </i> +84971 164 9697
+                    </li>
+                    <li> 
+                        <i class="fas fa-envelope"></i> nguyenquelan</i>
+                    </li>
+                    <li> 
+                        <i class="fas fa-envelope"></i> phamgiahuy</i>
+                    </li>
+                    <!-- <li>
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                    </li> -->
+                    <!-- <li> 
+                        <i class="fas fa-map-marker-alt"> lkasjlkasj</i>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
+                <h5>
+                    Hợp pháp
+                </h5>
+                <ul>
+                    <li> <a href="">Tổ chức pháp lý</a></li>
+                    <li> <a href="">Điều khoản sử dụng</a></li>
+                    <li> <a href="">Quyền riêng tư</a></li>
+                    <li> <a href="">Đơn vị phân phối</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12 col-footer" data-aos="slide-up" >
+                <h5>
+                    Về chúng tôi
+                </h5>
+                <ul>
+                    <li> <a href="">Ủng hộ</a></li>
+                    <li> <a href="">Tin tức</a></li>
+                    <li> <a href="">Blog</a></li>
+                    <li> <a href="">Liên hệ</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--hết footer------------------->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+   
+        $(function() { 
+            AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 2000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+         window.addEventListener('load', AOS.refresh); });
+            
+    </script>   
+</div>
+    
+</body>
+</html>
