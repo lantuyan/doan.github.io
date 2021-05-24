@@ -42,7 +42,7 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 2;
     background-color: transparent;
     
 }
@@ -828,3 +828,9 @@ header .navbar .btn-login{
         visibility: visible;
         opacity: 1;
     }
+
+
+    /* LOGIN FORM  */
+
+
+    
