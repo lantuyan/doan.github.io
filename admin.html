@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Apex Admin
+    </title>
+    <link rel="shortcut icon" href="/img/logo-mb.png" type="image/png">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="./img/logo-lg.png" alt="Comapny logo">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="./img/user-image.png" alt="User picture" class="profile-image">
+                <div class="sidebar-user-name">
+                    Nguyễn Quế Lân
+                </div>
+            </div> 
+            <button class="btn btn-outline">
+                <a href="index.html">
+                    <i class='bx bx-log-out bx-flip-horizontal'></i>
+                </a>
+               
+            </button>
+        </div>
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bx-home'></i>
+                    <span>quản lý</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span>Sản phẩm</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chart'></i>
+                    <span>Thống kê</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-user-circle'></i>
+                    <span>Quản lý tài khoản</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            Quản lý tài khoản
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Chỉnh sửa profile
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-category'></i>
+                    <span>Dự án gây quỹ</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            Danh sách
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Thêm dự án
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-category'></i>
+                    <span>e-commerce</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            list product
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            add product
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            orders
+                        </a>
+                    </li>
+                </ul>
+            </li> -->
+            <li>
+                <a href="#">
+                    <i class='bx bx-mail-send'></i>
+                    <span>Email</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span>Tin nhắn</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-calendar'></i>
+                    <span>Lịch</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-cog'></i>
+                    <span>Cài đặt</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            Phiên bản tối
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+            <div class="main-title">
+                quản lý
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row content-1">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Tổng lượt ủng hộ
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    6578
+                                </div>
+                                <i class='bx bx-credit-card-front'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                TỈ lệ chuyển đổi
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    30.5%
+                                </div>
+                                <i class='bx bx-chat'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Tổng tiền ủng hộ
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    $90,780
+                                </div>
+                                <i class='bx bx-line-chart'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Lượt truy cập hằng ngày
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    690
+                                </div>
+                                <i class='bx bx-user'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row content-2">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <!-- TOP PRODUCT -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Sản phẩm ủng hộ quỹ
+                        </div>
+                        <div class="box-body">
+                            <ul class="product-list">
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="./img/product1.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">
+                                                <a href=""></a>Tăm tre</div>
+                                            <div class="text-second">Dụng cụ vệ sinh</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$0,99</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="./img/product2.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Giày adidas</div>
+                                            <div class="text-second">Cloths</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$51,49</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="./img/product3.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Trái cây theo mùa</div>
+                                            <div class="text-second">Fruits</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$5,99</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="./img/product4.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Gạo quảng nam</div>
+                                            <div class="text-second">Food</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$5,930</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- % PRODUCT -->
+                </div>
+                <div class="col-4 col-md-6 col-sm-12">
+                    <!-- CATEGORY CHART -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Tỉ lệ ủng hộ
+                        </div>
+                        <div class="box-body">
+                            <div id="category-chart"></div>
+                        </div>
+                    </div>
+                    <!-- END CATEGORY CHART -->
+                </div>
+                <div class="col-5 col-md-12 col-sm-12">
+                    <!-- CUSTOMERS CHART -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Lượt ủng hộ hàng tháng
+                        </div>
+                        <div class="box-body">
+                            <div id="customer-chart"></div>
+                        </div>
+                    </div>
+                    <!-- END CUSTOMERS CHART -->
+                </div>
+                <div class="col-12">
+                    <!-- ORDERS TABLE -->
+                    <div class="box">
+                        <div class="box-header">
+                            Ủng hộ gần dây
+                        </div>
+                        <div class="box-body overflow-scroll">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Họ và tên</th>
+                                        <th>Ngày</th>
+                                        <th>Trạng thái</th>
+                                        <th>Trạng thái thanh toán</th>
+                                        <th>Tổng cộng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="./img/user-image.png" alt="user image">
+                                                <span>Nguyễn Quế Lân</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="order-status order-ready">
+                                                Sẵn sàng
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-pending">
+                                                <div class="dot"></div>
+                                                <span>Đang chờ</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="./img/user-image-2.png" alt="user image">
+                                                <span>Phạm Gia Huy</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Đã chuyển
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="./img/user-image-3.png" alt="user image">
+                                                <span>evelyn</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Đã chuyển
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="./img/user-image-2.png" alt="user image">
+                                                <span>John doe</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Đã chuyển
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="./img/user-image-3.png" alt="user image">
+                                                <span>evelyn</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Đã chuyển
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END ORDERS TABLE -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <div class="overlay"></div>
+
+    <!-- SCRIPT -->
+    <!-- APEX CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- APP JS -->
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
