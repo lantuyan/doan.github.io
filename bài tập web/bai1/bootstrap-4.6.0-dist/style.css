@@ -1,0 +1,30 @@
+.container{
+    width: 500px;
+    background-color: azure;
+}
+.row{
+    padding: 10px;
+}
+.form-control{
+    width: 450px !important;
+    background-color: #ffff !important;
+}
+#datepicker {
+    width: 180px;
+    margin: 0px !important;
+}
+
+.fa-calendar {
+    position: absolute;
+    /* top: 13px; */
+    font-size: larger;
+    color: #1976D2;
+    z-index: 1000
+}
+.icon-calendar{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 20px;
+    top: 6px;
+}
