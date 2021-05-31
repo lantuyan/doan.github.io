@@ -626,6 +626,8 @@ header .navbar .btn-login{
 }
 .news .news-box img{
     border-radius: 7px;
+    /* object-fit: cover; */
+    height: 200px;
 }
 .news .news-box a{
     text-decoration: none;
@@ -651,6 +653,21 @@ header .navbar .btn-login{
 .news .news-box .content{
     opacity: 0.9;
 }
+.news .box-read-more .btn-read-more{
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2a015b;
+    color: #ffff;
+    border-color: #2a015b;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.news .box-read-more button.btn-read-more:hover{
+    background-color: #120029;
+
+}
+
 
 
 
@@ -846,4 +863,4 @@ header .navbar .btn-login{
     /* LOGIN FORM  */
 
 
-    
+ 

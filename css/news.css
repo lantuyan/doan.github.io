@@ -2,6 +2,9 @@
 .news-html{
     margin-top: 50px;
 }
+.news-html .text-center{
+    margin-top: 30px;
+}
 .news-html h2{
         font-weight: 600;
         color: #FF685B;
@@ -10,7 +13,7 @@
     }
 .news-html .box-news {
     display:flex;
-    padding: 50px 40px;
+    padding: 40px 40px;
     margin-top: 5px;
     background-color: #EEF4F8
     }
@@ -40,14 +43,22 @@
     font-weight: 600;
 }
 .news-html .box-news .post-img{
-    background: url(../img/phuyen.jpg);
+    /* background: url(../img/phuyen.jpg); */
     /* background-attachment: fixed; */
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
+    overflow: hidden; */
     width: 100%;
     height: 100%;
+}
+.news-html .box-news .post-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+   
 }
 .news-html .box-news .post-content{
     margin-left: 10px;
