@@ -59,7 +59,7 @@
         <header>
             <div class="navbar navbar-expand-md container-fluid">
                 <a href="index.html" class="logo">
-                    CHARITY
+                    <img src="img/logo-charity.png" style="height: 70px; width: 100%;" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <i class="fas fa-bars"></i>
@@ -76,7 +76,7 @@
                             <a href="news.html" class="nav-link">Tin tức</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Liên hệ</a>
+                            <a href="contact.html" class="nav-link">Liên hệ</a>
                         </li>
 
                     </ul>
@@ -136,12 +136,13 @@
                             <div class="row g-2">
                                 <div class="col-md-6">
                                     <div class="inputbox"> <small>Họ Và Tên</small>
-                                        <input type="text" class="form-control" name="">
+                                        <input type="text" class="form-control" name="" required="required">
+                                        <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="inputbox"> <small>Ngày Sinh</small>
-                                        <input type="text" class="form-control" name="" placeholder="dd/mm/yy">
+                                        <input type="text" class="form-control" name="" placeholder="dd-mm-yy" required="required">
                                     </div>
                                 </div>
                             </div>
@@ -149,12 +150,12 @@
                                 <div class="col-md-6">
                                     <div class="inputbox"> <small>Email</small>
                                         <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Example@gmail.com">
+                                            aria-describedby="emailHelp" placeholder="Example@gmail.com" required="required">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="inputbox"> <small>Số điện thoại</small>
-                                        <input type="text" class="form-control" name="">
+                                        <input type="text" class="form-control" name="" required="required">
                                     </div>
                                 </div>
                             </div>
@@ -163,17 +164,17 @@
                                     <div class="form-group">
                                         <small>Message</small>
                                         <textarea class="form-control" id="exampleFormControlTextarea1"
-                                            rows="4"></textarea>
+                                            rows="4" required="required"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="inputbox">
-                                        <small>Số tiền</small>
+                                        <small>Số tiền </small>
                                         <input type="text" class="form-control" name="currency-field"
                                             id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value=""
-                                            data-type="currency">
+                                            data-type="currency" required="required">
                                     </div>
                                 </div>
                             </div>
@@ -193,12 +194,12 @@
                             <div class="row g-2">
                                 <div class="col-md-6">
                                     <div class="inputbox"> <small>Số Thẻ</small>
-                                        <input type="text" class="form-control" name="">
+                                        <input type="text" class="form-control" name="" required="required">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="inputbox "> <small>Tên Thẻ</small>
-                                        <input type="text" class="form-control name-card" name="">
+                                        <input type="text" class="form-control name-card" name="" required="required">
                                     </div>
                                 </div>
                             </div>
@@ -207,19 +208,19 @@
                                     <div class="row g-2">
                                         <div class="col-md-6">
                                             <div class="inputbox"> <small>Ngày</small>
-                                                <input type="text" class="form-control" name="">
+                                                <input type="text" class="form-control" name="" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="inputbox"> <small>Tháng</small>
-                                                <input type="text" class="form-control" name="">
+                                                <input type="text" class="form-control" name="" required="required">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="inputbox"> <small>CVV</small>
-                                        <input type="text" class="form-control" name="">
+                                        <input type="text" class="form-control" name="" required="required">
                                     </div>
                                 </div>
                             </div>

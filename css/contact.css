@@ -1,0 +1,41 @@
+.navbar{
+    background-color: white;
+}
+.contact-box h2{
+    font-weight: 600;
+    color: #FF685B;
+    /* padding-bottom: 40px; */
+    margin-top: 100px;
+    
+}
+.sent-mess{
+    width: 160px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #ff685b;
+    color: #ffff;
+    border-color: #ff685b;
+}
+.fa-map-marker{
+    color: rgb(201, 23, 23);
+}
+.fa-phone{
+    color: rgb(29, 173, 10)
+}
+.fa-envelope{
+    color:rgb(4, 63, 189)
+}
+button.sent-mess:hover{
+    background-color: #f04030;
+    color: #ffff;
+}
+
+.form-control {
+    border: 2px solid #ced4da
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #FF685B
+}
+

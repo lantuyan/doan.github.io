@@ -704,7 +704,7 @@ header .navbar .btn-login{
     border-radius: .25rem;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    /* padding: 8px; */
 }
 .company-content .company .box-company .content-company .tittle{
      font-weight: 600;
@@ -861,6 +861,3 @@ header .navbar .btn-login{
 
 
     /* LOGIN FORM  */
-
-
- 
