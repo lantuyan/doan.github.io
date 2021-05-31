@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+.donate-form{
+    height: fit-content;
+    border: white 1px solid;
+    padding: 20px 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+    background: linear-gradient(315deg, #d7d4d4, #fffdfd);
+    box-shadow:  -16px -16px 32px #e3e0e0,
+             16px 16px 32px #fbf8f8;
+}
+.btn-ungho{
+    background-color: #FF685B;
+    margin-top: 20px;
+    color: white;
+    border-color: #FF685B;
+}
+.btn-ungho:hover{
+     background-color: #f04030;
+     color: white;
+}
+.title{
+    margin-top: 20px;
+}
+.anh-chuong-trinh{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    width: 537px;
+    position: fixed;
+    top: 70px; 
+    position: -webkit-sticky; 
+    position: sticky;
+}
+.anh-chuong-trinh img{
+    border-radius: 3%;
+    box-shadow:  -16px -16px 32px #e3e0e0,
+             16px 16px 32px #fbf8f8;
+}
+
+label.radio {
+    cursor: pointer
+}
+.name-card{
+    text-transform: uppercase;
+}
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    padding: 7px 12px;
+    border: 2px solid #FF685B;
+    display: inline-block;
+    color: #FF685B;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+label.radio input:checked+span {
+    border-color: #FF685B;
+    background-color: #FF685B;
+    color: #fff
+}
+
+
+label.radio1 {
+    cursor: pointer;
+    width: 100%;
+    margin-right: 7px
+}
+
+label.radio1 input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio1 span {
+    padding: 20px 27px;
+    border: 2px solid #FF685B;
+    display: inline-block;
+    color: #FF685B;
+    border-radius: 3px;
+    text-transform: capitalize;
+    width: 100%
+}
+
+label.radio1 input:checked+span {
+    border-color: #FF685B;
+    background-color: #FF685B;
+    color: #fff
+}
+
+.form-control {
+    border: 2px solid #ced4da
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #FF685B
+}
+
