@@ -102,7 +102,29 @@
     border-color: #ff685b;
 }
 /*End NEWS*/
+@media  (max-width:1200px ){
+    .news-html .box-news .post-date{
+        display: none;
+    }
+    .news-html .box-news .post-content{
+        margin: 10px 0px;
+    }
+}
+@media (max-width: 1200px){
+    .news-html .box-news {
+        display: table;
+    }
+}
+@media (max-width: 320px){
+    .news-html .box-news .post-content .post-button .read-more{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .news-html .box-news .post-content .post-button .donate-btn{
+        width: 100%;
+    }
 
+}
 /* pagination*/
 .news-html .next-page{
     width: 1140px;
