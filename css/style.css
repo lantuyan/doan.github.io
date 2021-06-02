@@ -293,7 +293,7 @@ header .navbar .btn-login{
         padding:0px;
         /* margin-top: 100px; */
     }
-    .close {
+    /* .close {
         position:absolute;
         right:-30px;
         top:0;
@@ -302,7 +302,7 @@ header .navbar .btn-login{
         font-weight: normal;
         color:#fff;
         opacity:1;
-    }
+    } */
 
 /* OUR MISSION  */
 .our-mission{
@@ -666,6 +666,35 @@ header .navbar .btn-login{
 .news .box-read-more button.btn-read-more:hover{
     background-color: #120029;
 
+}
+
+/*MODAL NEWS*/
+
+.box-modal .modal-dialog{
+    margin: 25px auto;
+}
+
+.box-modal .modal-dialog .modal-content .modal-body{
+    padding: 20px 30px;
+}
+.box-modal .modal-dialog .modal-content .modal-body .box-title h4{
+    font-size: 30px;
+    font-weight: 550;
+    opacity: 0.7;
+    word-spacing: 2px;
+    transition: 0.3s ease-in-out;
+    color: #f04030;
+}
+.box-modal .modal-dialog .modal-content .modal-body .time{
+    margin: 5px 0px;
+    opacity: 0.7;
+    font-size: 15px;
+}
+figcaption{
+    text-align: center;
+}
+.modal-footer{
+    padding: 15px;
 }
 
 

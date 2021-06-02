@@ -129,3 +129,37 @@
 .pagination-style-three a:focus {
      background: #f04030; 
 }
+
+/* Modal */
+
+
+.modal-dialog{
+    margin: 25px auto;
+}
+.modal-title h5{
+    font-size: 1.25rem;
+}
+.modal-body{
+    padding: 20px 30px;
+}
+.modal-body .box-title h4{
+    font-size: 30px;
+    font-weight: 550;
+    opacity: 0.7;
+    word-spacing: 2px;
+    transition: 0.3s ease-in-out;
+    color: #f04030;
+}
+.modal-body .time{
+    margin: 5px 0px;
+    opacity: 0.7;
+    font-size: 15px;
+}
+figcaption{
+    text-align: center;
+}
+.modal-footer{
+    padding: 15px;
+
+}
+
