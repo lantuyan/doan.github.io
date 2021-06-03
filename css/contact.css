@@ -38,4 +38,8 @@ button.sent-mess:hover{
     box-shadow: none;
     border-color: #FF685B
 }
-
+@media (max-width: 540px){
+    div.col-sm-5{
+        margin-top: 20px;
+    }
+}

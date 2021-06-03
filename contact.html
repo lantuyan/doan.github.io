@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Liên Hệ</title>
 
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
@@ -15,9 +15,12 @@
     <!-- SLIDER  -->
     <link rel="stylesheet" href="css/lightslider.css">
     <script type="text/javascript" src="js/lightslider.js"></script>
+
+    <!--ICON TITLE-->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     
-        <!--fontawesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -36,40 +39,66 @@
 </head>
 <body>
     <div class="container-fluid" style="position: relative;">
-    <header>
-        <div class="navbar navbar-expand-md container-fluid" >
-            <a href="index.html" class="logo" style="display: block; ">
-                <img src="img/logo-charity-fund.png" style="height: 55px; width: auto;" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-link">Trang chủ</a></li>
-                    <li class="nav-item">
-                        <a href="ungho.html" class="nav-link">Ủng hộ</a></li>
-                    <li class="nav-item">
-                        <a href="news.html" class="nav-link">Tin tức</a></li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Liên hệ</a></li>
-                    
-                </ul>
-                <ul class="navbar-nav ml-auto" >
-                    <li class="nav-item">
-                        <!-- type="button" name="" id="button-login" class="btn btn-primary btn-lg btn-block" onclick="on_login()" -->
-                        <a href="#" class="nav-link btn-login" type="button" id="button-login" onclick="on_login()">Login</a></li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="fas fa-search"></i>
-                        </a></li>
-                    
-        
-                </ul>
+           <!-- Animation scroll header - navbar  -->
+       
+        <script>
+            $(window).on('scroll',function(){
+                if($(window).scrollTop()>20){
+                    $('header').addClass('bg-huong');
+                    $('header').addClass('animate__fadeInDown animate__animated ');
+                    $('.nav-link').css({
+                        "color": "black"
+                    });
+                }
+                else{
+                    $('header').removeClass('bg-huong');
+                    $('header').removeClass('animate__fadeInDown animate__animated ');
+                }
+            });
+            // Chạy chữ
+            
+        </script>
+        <!-- Hiệu ứng -->
+  
+        <header>
+            <style>
+
+                header .navbar ul li a{
+                    color: black;
+                }
+            </style>
+            <div class="navbar navbar-expand-md container-fluid">
+                <a href="index.html" class="logo" style="display: block; ">
+                    <img src="img/logo-charity-fund.png" style="height: 55px; width: auto;" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Trang chủ</a></li>
+                        <li class="nav-item">
+                            <a href="charity.html" class="nav-link">Ủng hộ</a></li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link">Tin tức</a></li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Liên hệ</a></li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto" >
+                        <li class="nav-item">
+                            <!-- type="button" name="" id="button-login" class="btn btn-primary btn-lg btn-block" onclick="on_login()" -->
+                            <a href="#" class="nav-link btn-login" type="button" id="button-login" onclick="on_login()">Login</a></li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-search"></i>
+                            </a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </header>
+            
+        </header>
+
     <div class="container contact-box" style="margin-top: 15vh;">
         <div class="col-12 text-center title">
             <h2 data-aos="fade-up" data-aos-duration="1000">Liên Hệ Với Chúng Tôi</h2>
@@ -86,16 +115,16 @@
                                  <div class="row">
                                      <div class="col-md-6">
                                          <div class="form-group">
-                                             <label for="form_name">Họ</label>
-                                             <input id="form_name" type="text" name="name" class="form-control"  required="required" >
-                                             <div class="help-block with-errors"></div>
+                                             <label for="form_name validationDefault01">Họ</label>
+                                             <input id="form_name validationDefault01" type="text" name="name" class="form-control" required >
+                                             <!-- <div class="help-block with-errors"></div> -->
                                          </div>
                                      </div>
                                      <div class="col-md-6">
                                          <div class="form-group">
                                              <label for="form_lastname">Tên</label>
-                                             <input id="form_lastname" type="text" name="surname" class="form-control" required="required" >
-                                             <div class="help-block with-errors"></div>
+                                             <input id="form_lastname" type="text" name="surname" class="form-control" required >
+                                             <!-- <div class="help-block with-errors"></div> -->
                                          </div>
                                      </div>
                                  </div>
@@ -138,7 +167,7 @@
                                 <i class="fa fa-map-marker"></i>   Địa Chỉ
                             </div>
                             <div class="col-sm-9">
-                                470 Trần Đại Nghĩa, Ngũ Hành Sơn, <br> Đà Nẵng
+                                470 Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng
                             </div>
                         </div>
                         

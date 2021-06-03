@@ -1,0 +1,98 @@
+.container-charity-title{
+    margin-top: 200px;
+}
+.container-charity-content .donate-form{
+    box-shadow: 0 6px 16px rgb(0 0 0 / 12%);
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 25px 30px;
+    /* max-width: 100%; */
+
+   
+}
+.sticky{
+    position: fixed;
+    top:95px;
+    width: 475px;
+}
+.height-box{
+    margin-top: 2900px;
+}
+.container-charity-content .donate-form h5{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.container-charity-content .donate-form .row{
+    /* margin: 0px 5px; */
+}
+.container-charity-content .box .money-content{
+    display: flex;
+    justify-content: space-between;
+}
+.container-charity-content .box .money-content section{
+    flex: 1;
+}
+.container-charity-content .box .progress-bar-tab {
+    text-align: right;
+    margin-top: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-charity-content .box .progress{
+   margin:0px;
+   line-height: 31px;
+   width: 80%;
+   border-radius: 30px;
+   height: 7px;
+}
+/* .container-charity-content .box .progress b{
+   text-align: right;
+ } */
+.container-charity-content .box .progress .bar{
+    width: 30%;
+    background-color: #423B7D;
+}
+.container-charity-content .box .time-content{
+    padding: 10px 0px;
+}
+.container-charity-content .box .btn-content{
+    margin: 10px 0px;
+}
+.btn-ungho{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ff685b;
+    color: #ffff;
+    border-color: #ff685b;
+}
+.btn-ungho:hover{
+    background-color: #f04030;
+    color:#e0e0e0;
+}
+.btn-info{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    color: #ffff;
+}
+.container-charity-content .box-company .icon-company{
+    display: flex;
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 3%), 0 1px 6px 0 rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    align-items: center;
+    justify-content: center;
+}
+.container-charity-content .box-company .content-company{
+    text-align: center;
+}
+.container-charity-content .box-company {
+    display: flex;
+    padding: 10px 0px 0px 0px;
+}
+
