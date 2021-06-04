@@ -8,17 +8,25 @@
     <title>
         Apex Admin
     </title>
+    <!-- JQUERY -->
+    <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <!---->
     <link rel="shortcut icon" href="/img/logo-mb.png" type="image/png">
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- APP CSS -->
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/app.css">
     <!--ICON TITLE-->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
 </head>
 
 <body>
@@ -41,7 +49,7 @@
                     Nguyễn Quế Lân
                 </div>
             </div> 
-            <button class="btn btn-outline">
+            <button class="btn btn-outline" data-toggle="tooltip" data-placement="top" title="Tooltip on right">
                 <a href="index.html">
                     <i class='bx bx-log-out bx-flip-horizontal'></i>
                 </a>
@@ -51,21 +59,21 @@
         <!-- SIDEBAR MENU -->
         <ul class="sidebar-menu">
             <li>
-                <a href="#" class="active">
+                <a href="admin.html" class="active">
                     <i class='bx bx-home'></i>
                     <span>quản lý</span>
                 </a>
             </li>
-            <li>
+            <li data-toggle="tooltip" data-placement="right" title="Tooltip on right">
                 <a href="#">
                     <i class='bx bx-shopping-bag'></i>
                     <span>Sản phẩm</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="admin-1.html">
                     <i class='bx bx-chart'></i>
-                    <span>Thống kê</span>
+                    <span>Danh sách ủng hộ</span>
                 </a>
             </li>
             <li class="sidebar-submenu">
@@ -76,7 +84,7 @@
                 </a>
                 <ul class="sidebar-menu sidebar-menu-dropdown-content">
                     <li>
-                        <a href="#">
+                        <a href="admin-2.html">
                             Quản lý tài khoản
                         </a>
                     </li>
@@ -95,12 +103,12 @@
                 </a>
                 <ul class="sidebar-menu sidebar-menu-dropdown-content">
                     <li>
-                        <a href="#">
+                        <a href="admin-3.html">
                             Danh sách
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" data-toggle="modal" data-target="#add-duan">
                             Thêm dự án
                         </a>
                     </li>
@@ -472,13 +480,14 @@
                                     </tr>
                                 </tbody>
                             </table>
+                                
                         </div>
                     </div>
                     <!-- END ORDERS TABLE -->
                 </div>
             </div>
         </div>
-    </div>
+        
     <!-- END MAIN CONTENT -->
 
     <div class="overlay"></div>
@@ -488,6 +497,217 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- APP JS -->
     <script src="./js/app.js"></script>
+
+
+    <!--MODAL DỰ ÁN-->
+    <div class="modal fade"  id="add-duan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable " role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <strong class="modal-title" id="myModalLabel">Thêm dự án</strong>
+              <button type="button" class="close" id="off" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form >
+                    <div class="form-group">
+                        <label>Loại Chương Trình</label>
+                        <select class="form-control" name="exampleFormControlSelect1"
+                            id="exampleFormControlSelect1">
+                            <option  value="1">...</option>
+                            <option  value="2">Covid-19</option>
+                            <option   value="3">Bão lũ</option>
+                            <option  value="4">Khiếm khuyết</option>
+                            <option  value="4">Khó Khăn</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="form_name validationDefault01">Tên Chương Trình</label>
+                        <input id="form_name validationDefault01" type="text" name="name" class="form-control"  >
+                        <!-- <div class="help-block with-errors"></div> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="form_message">Nội Dung</label>
+                        <textarea id="form_message" name="message" class="form-control" rows="4" ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Số Tiền Kêu Gọi</label>
+                        <input type="text" class="form-control" name="currency-field" id="currency-field"  value=""
+                            data-type="currency" >
+                    </div>
+                    <div>
+                        <label>Upload File</label> <br>
+                        <input type="file"  id="files" name="files" multiple>
+                    </div>
+                    
+                    <div class=" container js-file-list ">
+
+                    </div>
+                </form>
+                    
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" id="btnsubmit">Đăng tải</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--MODAL SUCCESS-->
+    <div id="Success" class="modal fade" role="dialog" data-backdrop="false">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                     <p> <i class="bi bi-check-circle-fill"></i> Đăng tải dự án thành công.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning confirmclosed">Thoát</button>
+                    <button type="button" class="btn btn-success continue">Tiếp Tục</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--upload img-->
+
+    <script>
+$(document).ready(function(){
+  $('#files').on('change', function() {
+    var files = $(this)[0].files;
+
+    for(var i = 0; i < files.length; i++) {
+      var file = files[i];
+      var fileReader = new FileReader();
+      fileReader.onload = (function(fileParams) {
+        return function(event) {
+          var str = '<div class="col-4">' +
+            '<span class="js-file-name"></span><br>' +
+            '<span class="js-file-size"></span> (Byte)<br>' +
+            '<img class="img-thumbnail js-file-image" style="width: 100%; height: 100%">' +
+          '</div>';
+          $('.js-file-list').append(str);
+
+          var imageSrc = event.target.result;
+          var fileName = fileParams.name;
+          var fileSize = fileParams.size;
+
+          $('.js-file-name').last().text(fileName);
+          $('.js-file-size').last().text(fileSize);
+          $('.js-file-image').last().attr('src', imageSrc);
+        };
+      })(file);  
+      fileReader.readAsDataURL(file);
+    }  
+  });
+});
+    </script>
+    <!---->
+
+        <script>
+        $(document).ready(function () {
+	    $('#btnsubmit').click(function () {
+	        $('#Success').modal('show');
+	    });
+
+	    $('.confirmclosed').click(function () {
+	        $('#Success').modal('hide');
+	        $('#add-duan').modal('hide');
+	    });
+        $('.continue').click(function(){
+            $('#Success').modal('hide');
+        });
+	});
+    </script>
+
+ <!--Currency-->
+    <script>
+        $("input[data-type='currency']").on({
+            keyup: function () {
+                formatCurrency($(this));
+            },
+            blur: function () {
+                formatCurrency($(this), "blur");
+            }
+        });
+
+
+        function formatNumber(n) {
+            // format number 1000000 to 1,234,567
+            return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        }
+
+
+        function formatCurrency(input, blur) {
+            // appends $ to value, validates decimal side
+            // and puts cursor back in right position.
+
+            // get input value
+            var input_val = input.val();
+
+            // don't validate empty input
+            if (input_val === "") { return; }
+
+            // original length
+            var original_len = input_val.length;
+
+            // initial caret position 
+            var caret_pos = input.prop("selectionStart");
+
+            // check for decimal
+            if (input_val.indexOf(".") >= 0) {
+
+                // get position of first decimal
+                // this prevents multiple decimals from
+                // being entered
+                var decimal_pos = input_val.indexOf(".");
+
+                // split number by decimal point
+                var left_side = input_val.substring(0, decimal_pos);
+                var right_side = input_val.substring(decimal_pos);
+
+                // add commas to left side of number
+                left_side = formatNumber(left_side);
+
+                // validate right side
+                right_side = formatNumber(right_side);
+
+                // On blur make sure 2 numbers after decimal
+                if (blur === "blur") {
+                    right_side;
+                }
+
+                // Limit decimal to only 2 digits
+                right_side = right_side.substring(0, 2);
+
+                // join number by .
+                input_val = left_side + "." + right_side;
+
+            } else {
+                // no decimal entered
+                // add commas to number
+                // remove all non-digits
+                input_val = formatNumber(input_val);
+                input_val = input_val;
+
+                // final formatting
+                if (blur === "blur") {
+                    input_val;
+                }
+            }
+
+            // send updated string to input
+            input.val(input_val);
+
+            // put caret back in the right position
+            var updated_len = input_val.length;
+            caret_pos = updated_len - original_len + caret_pos;
+            input[0].setSelectionRange(caret_pos, caret_pos);
+        }
+    </script>
+
+
+    
 
 </body>
 

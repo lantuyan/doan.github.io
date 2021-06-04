@@ -36,12 +36,18 @@ body {
     color: var(--text-color);
     position: relative;
 }
-
+*:hover{
+    text-decoration: none !important;
+}
 a {
     text-decoration: none;
     color: unset;
     display: inline-block;
 }
+a:hover{
+    text-decoration: none;
+}
+
 
 .sidebar {
     background-color: var(--box-bg);
@@ -488,3 +494,61 @@ table td {
         right: -15px;
     }
 }
+label{
+    margin-bottom: 0px;
+}
+.js-file-list{
+    display: flex;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    border: 2px solid #a5a4ac;
+    padding: .2em .4em;
+    border-radius: 3px;
+    background-color: #a5a4ac;
+    transition: 1s;
+  }
+  
+  input[type=file]::file-selector-button {
+    border: 2px solid #a5a4ac;
+    padding: .2em .4em;
+    border-radius: 3px;
+    background-color: #a5a4ac;
+    transition: 1s;
+  }
+  
+  input[type=file]::-webkit-file-upload-button:hover {
+    background-color: #817f92;
+    border: 2px solid #817f92;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background-color: #817f92;
+    border: 2px solid #817f92;
+  }
+  .form-control:hover:focus{
+    border: 2px solid var(--main-color);
+    box-shadow: none;
+  }
+  .modal-footer .btn-success{
+      background-color: rgb(24, 201, 18);
+      border-color: rgba(24,201,18);
+      color: #fff;
+  }
+  .modal-footer .btn:hover{
+      
+  }
+  .modal-footer .btn-warning{
+    background-color: red;
+    color: #fff;
+  }
+  .bi-check-circle-fill{
+      color: rgb(24, 201, 18);
+      margin-right: 10px;
+  }
+  .dark .modal {
+    --body-bg: #1a191f;
+    --box-bg: #1a191f;
+    --border-color: #222028;
+    --text-color: #b9b9b9;
+  }
