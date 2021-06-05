@@ -43,19 +43,30 @@
 <body>
     <div class="container-fluid" style="position: relative;">
         <!-- Animation scroll header - navbar  -->
+        <style>
+            .color-black{color: black;}
+            .color-white{
+                color: white;}
+        </style>
         <script>
-            $(window).on('scroll', function () {
-                if ($(window).scrollTop() > 20) {
+            $(window).on('scroll',function(){
+                if($(window).scrollTop()>20){
                     $('header').addClass('bg-huong');
                     $('header').addClass('animate__fadeInDown animate__animated ');
+                    $('.nav-link').css({
+                        "color" : "var(--text-color)"
+                    });
                 }
-                else {
+                else{
                     $('header').removeClass('bg-huong');
                     $('header').removeClass('animate__fadeInDown animate__animated ');
+                    $('.nav-link').css({
+                        "color" : "var(--bg-color)"
+                    });
                 }
             });
             // Chạy chữ
-
+            
         </script>
         <!-- Hiệu ứng -->
 
@@ -114,7 +125,7 @@
         </div>
 
         <!--ỦNG HỘ-->
-        <div class="container" style="overflow-x:hidden ;">
+        <div class="container" >
             <div class="row col-12">
                 <div class="col-12 text-center title">
                     <h2 data-aos="fade-up" data-aos-duration="1000">Ủng Hộ</h2>
@@ -230,7 +241,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12 text-center">
-                                    <button class="btn btn-ungho btn-block">Ủng Hộ</button>
+                                    <button class="btn btn-ungho btn-block" ondblclick="ungho()" on>Ủng Hộ</button>
                                 </div>
                             </div>
                         </form>
@@ -243,7 +254,11 @@
                 </div>
             </div>
         </div>
-
+        <script>
+            function ungho() {
+                alert('Bạn đã ủng hộ tiền thành công, hệ thống sẽ ghi nhận và cập nhật cho bạn sớm nhất có thể. Xin chân thành cảm ơn!')
+            }
+        </script>
 
         <!-- FOOTER ----------------------------- -->
         <div class="footer" style="overflow:hidden ;">
