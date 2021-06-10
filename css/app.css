@@ -94,12 +94,24 @@ a:hover{
     align-items: center;
 }
 
-.sidebar-user-name {
+ .sidebar-user-name {
     margin-left: 10px;
+    margin-right: 10px;
     font-size: 1.25rem;
     font-weight: 700;
     text-transform: capitalize;
+    line-height: 18px;
+    
 }
+.sidebar-user-name span{
+    font-weight: 500;
+    font-size: 13px;
+    /* font-style: italic; */  
+ } 
+ .rank-user-gold{
+     /* font-size: 15px; */
+     color: gold;
+ }
 
 .profile-image {
     width: var(--profile-image-size);
