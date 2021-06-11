@@ -111,6 +111,9 @@ header .navbar .btn-nav{
     border-radius:  30px;
     /* border: 1px solid rgba(165,0,0) ; */
 }
+.color-bars{
+    color: var(--text-color);
+}
 
 /* Start-Content  */
 .start-content {
@@ -263,7 +266,7 @@ header .navbar .btn-nav{
         transition: 0.5s ease-in-out;
         margin-top: 30px;
         margin-bottom: 30px;
-        color: var(--text-color);
+        color: #fff;
     }
     .features-content .video{
         position: relative;
@@ -673,7 +676,7 @@ header .navbar .btn-nav{
     height: 40px;
     border-radius: 10px;
     background-color: #2a015b;
-    color: var(--text-color);
+    color: #fff;
     border-color: #2a015b;
     margin-right: 10px;
     margin-top: 30px;
@@ -912,7 +915,7 @@ figcaption{
         cursor: pointer;
     }
     :root{
-        --bg-color: #000;
+        --text-color: #000;
         --bg-color: #fff;
         --slider-container: #eef4f8;
     }
@@ -920,4 +923,7 @@ figcaption{
          --bg-color: #1a191f;
         --text-color: #b9b9b9;
         --slider-container: #1a191f;
+    }
+    .dark-mode{
+        margin: auto;
     }
