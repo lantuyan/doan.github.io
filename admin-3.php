@@ -1,3 +1,12 @@
+<?php
+session_start();
+//tiến hành kiểm tra là người dùng đã đăng nhập hay chưa
+//nếu chưa, chuyển hướng người dùng ra lại trang đăng nhập
+if (!isset($_SESSION['username'])) {
+	 header('Location: index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,148 +50,7 @@
 <body>
 
     <!-- SIDEBAR -->
-    <div class="sidebar">
-        <div class="sidebar-logo">
-            <a href="index.html">
-            <!-- <img src="./img/logo-lg.png" alt="Comapny logo"> -->
-            <img src="img/logo-charity-fund.png" style="height: 55px; width: auto;" alt="">
-            </a>
-            <div class="sidebar-close" id="sidebar-close">
-                <i class='bx bx-left-arrow-alt'></i>
-            </div>
-        </div>
-        <div class="sidebar-user">
-            <div class="sidebar-user-info">
-                <img src="./img/user-image.png" alt="User picture" class="profile-image">
-                <div class="sidebar-user-name">
-                    Nguyễn Quế Lân
-                </div>
-            </div> 
-            <button class="btn btn-outline">
-                <a href="index.html">
-                    <i class='bx bx-log-out bx-flip-horizontal'></i>
-                </a>
-               
-            </button>
-        </div>
-        <!-- SIDEBAR MENU -->
-        <ul class="sidebar-menu">
-            <li>
-                <a href="admin.html" >
-                    <i class='bx bx-home'></i>
-                    <span>quản lý</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-shopping-bag'></i>
-                    <span>Sản phẩm</span>
-                </a>
-            </li>
-            <li>
-                <a href="admin-1.html" >
-                    <i class='bx bx-chart'></i>
-                    <span>Danh sách ủng hộ</span>
-                </a>
-            </li>
-            <li class="sidebar-submenu">
-                <a href="#" class="sidebar-menu-dropdown">
-                    <i class='bx bx-user-circle'></i>
-                    <span>Quản lý tài khoản</span>
-                    <div class="dropdown-icon"></div>
-                </a>
-                <ul class="sidebar-menu sidebar-menu-dropdown-content">
-                    <li>
-                        <a href="admin-2.html">
-                            Quản lý tài khoản
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Chỉnh sửa profile
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="sidebar-submenu">
-                <a href="#" class="sidebar-menu-dropdown active" >
-                    <i class='bx bx-category'></i>
-                    <span>Dự án gây quỹ</span>
-                    <div class="dropdown-icon"></div>
-                </a>
-                <ul class="sidebar-menu sidebar-menu-dropdown-content" style="height:90px;">
-                    <li>
-                        <a href="admin-3.html" class="active">
-                            Danh sách
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#add-duan">
-                            Thêm dự án
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <!-- <li class="sidebar-submenu">
-                <a href="#" class="sidebar-menu-dropdown">
-                    <i class='bx bx-category'></i>
-                    <span>e-commerce</span>
-                    <div class="dropdown-icon"></div>
-                </a>
-                <ul class="sidebar-menu sidebar-menu-dropdown-content">
-                    <li>
-                        <a href="#">
-                            list product
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            add product
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            orders
-                        </a>
-                    </li>
-                </ul>
-            </li> -->
-            <li>
-                <a href="#">
-                    <i class='bx bx-mail-send'></i>
-                    <span>Email</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-chat'></i>
-                    <span>Tin nhắn</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-calendar'></i>
-                    <span>Lịch</span>
-                </a>
-            </li>
-            <li class="sidebar-submenu">
-                <a href="#" class="sidebar-menu-dropdown">
-                    <i class='bx bx-cog'></i>
-                    <span>Cài đặt</span>
-                    <div class="dropdown-icon"></div>
-                </a>
-                <ul class="sidebar-menu sidebar-menu-dropdown-content">
-                    <li>
-                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
-                            Phiên bản tối
-                            <span class="darkmode-switch"></span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <!-- END SIDEBAR MENU -->
-    </div>
+        <?php include "include/sidebar-admin.php"; ?>
     <!-- END SIDEBAR -->
 
     <!-- MAIN CONTENT -->

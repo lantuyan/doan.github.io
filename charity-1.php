@@ -69,40 +69,56 @@
         </script>
         <!-- Hiệu ứng -->
         
-        <header>
-            <div class="navbar navbar-expand-md container-fluid">
-                <a href="index.html" class="logo" style="display: block; ">
-                    <img src="img/logo-charity-fund.png" style="height: 55px; width: auto;" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a href="index.html" class="nav-link">Trang chủ</a></li>
-                        <li class="nav-item">
-                            <a href="charity.html" class="nav-link">Ủng hộ</a></li>
-                        <li class="nav-item">
-                            <a href="news.html" class="nav-link">Tin tức</a></li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Liên hệ</a></li>
-                        
-                    </ul>
-                    <ul class="navbar-nav ml-auto" >
-                        <li class="nav-item">
-                            <!-- type="button" name="" id="button-login" class="btn btn-primary btn-lg btn-block" onclick="on_login()" -->
-                            <a href="#" class="nav-link btn-login" type="button" id="button-login" onclick="on_login()">Login</a></li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-search"></i>
-                            </a></li>
-                        
-            
-                    </ul>
-                </div>
+      <header>
+        <div class="navbar navbar-expand-md container-fluid">
+            <a href="../index.php" class="logo" style="display: block; ">
+                <img src="img/logo-charity-fund.png" style="height: 55px; width: auto;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="../index.php" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item">
+                        <a href="../charity.php" class="nav-link">Ủng hộ</a></li>
+                    <li class="nav-item">
+                        <a href="../news.php" class="nav-link">Tin tức</a></li>
+                    <li class="nav-item">
+                        <a href="../contact.php" class="nav-link">Liên hệ</a></li>
+                    
+                </ul>
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item">
+                        <!-- type="button" name="" id="button-login" class="btn btn-primary btn-lg btn-block" onclick="on_login()" -->
+                        <a href="login.php" class="nav-link btn-login" type="button" id="button-login" >Login</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="img/moon.png" id="icon-dark-mode" alt="">
+                    </li>
+                    
+                </ul>
             </div>
-        </header>
+        </div>
+    </header>
+     <!--dark mode-->
+     <script>
+        var icon = document.getElementById("icon-dark-mode");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "img/sun.png";
+            }else{
+                icon.src = "img/moon.png";
+            }
+        }
+    </script>
         
         <!-- Phần đầu  -->
         <section>
@@ -943,111 +959,7 @@
 
         <!-- -------------------------  -->
         <!-- FOOTER ----------------------------- -->
-        <div class="footer" style="overflow:hidden ;">
-            <div class=" container">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <h1 class="display-5 content-title" data-aos="fade-up" data-aos-duration="1000">Đăng kí ngay</h1>
-                        <div class="footer-form">
-                            <input type="text" name="" id="" class="footer-text" placeholder="Enter E-Mail Address" data-aos="slide-right">
-                            <button type="submit" value="Đăng kí" class="footer-btn " data-aos="slide-left">Đăng kí </button>
-                        </div>
-                            
-                    </div>
-                </div>
-                <div class="row container-content ">
-                    <div class="col-md-5 col-sm-6 col-xs-12 col-footer" >
-                        <h5>
-                            Website
-                        </h5>
-                        <p>Trang web giúp các các nhân tổ chức ủng hộ và quyên góp, tổ chức các hoạt động từ thiện để giúp đỡ bà con nhân dân.</p>
-        
-                                <!-- FOOTER SOCIAL    -->
-                        <div class="footer-social">
-                            <div class="social-block"> 
-                                <a href="">
-                                    <i class="fa fa-facebook-f" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="social-block">
-                                <a href="">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="social-block">
-                                <a href="">
-                                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="social-block">
-                                
-                            <a href="">
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                            </a>
-                            </div>
-                            <div class="social-block">
-                                <div class="theme-switch-wrapper">
-                                    <label class="theme-switch" for="checkbox">
-                                       <input type="checkbox" id="checkbox" />
-                                       <div class="slider round"></div>
-                                    </label>
-                                 </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 col-footer" >
-                        <h5>
-                            Địa chỉ liên hệ
-                        </h5>
-                        <ul>
-                            <li> 
-                                <i class="fas fa-map-marker-alt"></i> 470 Trần Đại Nghĩa, Hòa Hải, Ngủ Hành Sơn, Đà Nẵng
-                            </li>
-                            <li> 
-                                <i class="fas fa-phone-alt"> </i> +84971 164 9697
-                            </li>
-                            <li> 
-                                <i class="fas fa-envelope"></i> nguyenquelan</i>
-                            </li>
-                            <li> 
-                                <i class="fas fa-envelope"></i> phamgiahuy</i>
-                            </li>
-                            <!-- <li>
-                                <i class="fa fa-comment" aria-hidden="true"></i>
-                            </li> -->
-                            <!-- <li> 
-                                <i class="fas fa-map-marker-alt"> lkasjlkasj</i>
-                            </li> -->
-                        </ul>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12 col-footer">
-                        <h5>
-                            Hợp pháp
-                        </h5>
-                        <ul>
-                            <li> <a href="">Tổ chức pháp lý</a></li>
-                            <li> <a href="">Điều khoản sử dụng</a></li>
-                            <li> <a href="">Quyền riêng tư</a></li>
-                            <li> <a href="">Đơn vị phân phối</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12 col-footer"  >
-                        <h5>
-                            Về chúng tôi
-                        </h5>
-                        <ul>
-                            <li> <a href="">Ủng hộ</a></li>
-                            <li> <a href="">Tin tức</a></li>
-                            <li> <a href="">Blog</a></li>
-                            <li> <a href="">Liên hệ</a></li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <?php include "include/footer.html"; ?>
         <!--button go to top-->
         <script>
             $(document).ready(function(){
@@ -1101,125 +1013,7 @@
         </script>
 
 
-        <!-- FORM login  -->
-        <style>
-        </style>
-        <link rel="stylesheet" href="css/loginform.css">
-         <div class="container-login animate-zoom" id="container-login" >
-           <div class="forms-container">
-             <div class="signin-signup">
-               
-               <form action="#" class="sign-in-form" action="admin.html">
-                 <h2 class="title">Đăng nhập</h2>
-                 <div class="input-field">
-                   <i class="fas fa-user"></i>
-                   <input type="text" placeholder="Username" />
-                 </div>
-                 <div class="input-field">
-                   <i class="fas fa-lock"></i>
-                   <input type="password" placeholder="Password" />
-                 </div>
-                 <a href="admin.html" class="btn solid" style="    display: flex;flex-direction: column;justify-content: center;">Login</a>
-                 <!-- <input type="submit" value="Login" class="btn solid" /> -->
-                 <p class="social-text">Đăng nhập với các nền tảng khác</p>
-                 <div class="social-media">
-                   <a href="#" class="social-icon">
-                     <i class="fab fa-facebook-f"></i>
-                   </a>
-                   <a href="#" class="social-icon">
-                     <i class="fab fa-twitter"></i>
-                   </a>
-                   <a href="#" class="social-icon">
-                     <i class="fab fa-google"></i>
-                   </a>
-                   <a href="#" class="social-icon">
-                     <i class="fab fa-linkedin-in"></i>
-                   </a>
-                 </div>
-               </form>
-               <form action="#" class="sign-up-form">
-                 <h2 class="title">Đăng kí</h2>
-                 <div class="input-field">
-                   <i class="fas fa-user"></i>
-                   <input type="text" placeholder="Username" />
-                 </div>
-                 <div class="input-field">
-                   <i class="fas fa-envelope"></i>
-                   <input type="email" placeholder="Email" />
-                 </div>
-                 <div class="input-field">
-                   <i class="fas fa-lock"></i>
-                   <input type="password" placeholder="Password" />
-                 </div>
-                 <input type="submit" class="btn" value="Sign up" />
-                 <p class="social-text">Đăng kí với các nền tảng khác</p>
-                 <div class="social-media">
-                   <a href="#" class="social-icon">
-                     <i class="fab fa-facebook-f"></i>
-                   </a>
-                   <a href="#" class="social-icon">
-                     <i class="fab fa-twitter"></i>
-                   </a>
-                   <a href="#" class="social-icon">
-                     <i class="fab fa-google"></i>
-                   </a>
-                   <a href="#" class="social-icon">
-                     <i class="fab fa-linkedin-in"></i>
-                   </a>
-                 </div>
-               </form>
-             </div>
-           </div>
-           <div class="panels-container">
-             <div class="panel left-panel">
-               <div class="content">
-                 <h3>Bạn là người mới?</h3>
-                 <p>
-                   Bấm vào đăng kí ngay để có thể khởi tạo các thông tin và danh mục ủng hộ!
-                 </p>
-                 <button class="btn transparent" id="sign-up-btn">
-                   Đăng kí
-                 </button>
-                 <button type="button" name="" id="button-login1" class="btn btn-primary " onclick="off_login()">Quay lại</button>
-               </div>
-               <img src="img/log.svg" class="image" alt="" />
-             </div>
-             <div class="panel right-panel">
-               <div class="content">
-                 <h3>Bạn đã đăng kí?</h3>
-                 <p>
-                   Đăng nhập và cùng website đồng hành đưa đến những niềm vui dựa trên sự giúp đỡ của bạn!
-                 </p>
-                 <button class="btn transparent" id="sign-in-btn">
-                   Đăng nhập
-                 </button>
-                 <button type="button" name="" id="button-login1" class="btn btn-primary  " onclick="off_login()">Quay lại</button>
-               </div>
-               <img src="img/register.svg" class="image" alt="" />
-             </div>
-           </div>
-         </div>
-     
-         <script>
-             const sign_in_btn = document.querySelector("#sign-in-btn");
-            const sign_up_btn = document.querySelector("#sign-up-btn");
-            const container = document.querySelector(".container-login");
-            sign_up_btn.addEventListener("click", () => {
-            container.classList.add("sign-up-mode");
-            });
-            sign_in_btn.addEventListener("click", () => {
-            container.classList.remove("sign-up-mode");
-            });
-            function on_login() {
-            document.getElementById("container-login").classList.remove("container-off");
-            document.getElementById("container-login").classList.add("container-on");
-            }
-            function off_login() {
-            document.getElementById("container-login").classList.remove("container-on");
-            document.getElementById("container-login").classList.add("container-off");
-            }
-         </script>
-  
+    
     </div>
    
 

@@ -39,136 +39,10 @@
 </head>
 <body>
     <div class="container-fluid" style="position: relative;">
-           <!-- Animation scroll header - navbar  -->
-           <style>
-            .color-black{color: black;}
-            .color-white{
-                color:white;}
-        </style>
-        <script>
-            $(window).on('scroll',function(){
-                if($(window).scrollTop()>20){
-                    $('header').addClass('bg-huong');
-                    $('header').addClass('animate__fadeInDown animate__animated ');
-                    $('.nav-link').css({
-                        "color": "black"
-                    });
-                }
-                else{
-                    $('header').removeClass('bg-huong');
-                    $('header').removeClass('animate__fadeInDown animate__animated ');
-                    $('.nav-link').css({
-                        "color": "#ffff"
-                    });
-                }
-            });
-            // Chạy chữ
-            
-        </script>
-        <!-- Hiệu ứng -->
-  
-        <header>
-            <div class="navbar navbar-expand-md container-fluid">
-                <a href="index.html" class="logo" style="display: block; ">
-                    <img src="img/logo-charity-fund.png" style="height: 55px; width: auto;" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a href="index.html" class="nav-link">Trang chủ</a></li>
-                        <li class="nav-item">
-                            <a href="charity.html" class="nav-link">Ủng hộ</a></li>
-                        <li class="nav-item">
-                            <a href="news.html" class="nav-link">Tin tức</a></li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Liên hệ</a></li>
-                        
-                    </ul>
-                    <ul class="navbar-nav ml-auto" >
-                        <li class="nav-item">
-                            <!-- type="button" name="" id="button-login" class="btn btn-primary btn-lg btn-block" onclick="on_login()" -->
-                            <a href="#" class="nav-link btn-login" type="button" id="button-login" onclick="on_login()">Login</a></li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-search"></i>
-                            </a></li>
-                        
-            
-                    </ul>
-                </div>
-            </div>
-        </header>
+     
+    <!-- Header  -->
+    <?php include "include/header.html"; ?>
 
-<!-- Phần đầu  -->
-<ul id="slider-head">
-    <li>
-        <div class="start-content start-content-1" style="overflow:hidden ;">
-            <div class="d-flex align-items-center content-start" >
-                <h1 class="text-center" data-aos="zoom-in" >Chia sẻ</h1>
-                <p class="" data-aos="zoom-in">
-                    Giúp đỡ lẫn nhau giữa con người với con người,
-                    gửi gấm đi những ước mơ và tương lai cho thế hệ trẻ <br>
-                    Sinh ra trong nghèo khó không phải lỗi do chúng ta 
-                    nhưng chết trong nghèo khó chính là lỗi do chính bản thân bạn.
-                </p>
-                <button class="btn" data-aos="zoom-out-up" >
-                    Tham gia ngay
-                </button>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="start-content start-content-2" style="overflow:hidden ;">
-            <div class="d-flex align-items-center content-start" >
-                <h1 class="text-center" data-aos="zoom-in" >Chia sẻ</h1>
-                <p class="" data-aos="zoom-in">
-                    Giúp đỡ lẫn nhau giữa con người với con người,
-                    gửi gấm đi những ước mơ và tương lai cho thế hệ trẻ <br>
-                    Sinh ra trong nghèo khó không phải lỗi do chúng ta 
-                    nhưng chết trong nghèo khó chính là lỗi do chính bản thân bạn.
-                </p>
-                <button class="btn" data-aos="zoom-out-up" >
-                    Tham gia ngay
-                </button>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="start-content start-content-3" style="overflow:hidden ;">
-            <div class="d-flex align-items-center content-start" >
-                <h1 class="text-center" data-aos="zoom-in" >Chia sẻ</h1>
-                <p class="" data-aos="zoom-in">
-                    Giúp đỡ lẫn nhau giữa con người với con người,
-                    gửi gấm đi những ước mơ và tương lai cho thế hệ trẻ <br>
-                    Sinh ra trong nghèo khó không phải lỗi do chúng ta 
-                    nhưng chết trong nghèo khó chính là lỗi do chính bản thân bạn.
-                </p>
-                <button class="btn" data-aos="zoom-out-up" >
-                    Tham gia ngay
-                </button>
-            </div>
-        </div>
-    </li>
-  </ul>
-  <script type="text/javascript">
-    $(document).ready(function() {
-    var slider = $("#slider-head").lightSlider({
-        item: 1,
-        loop:true,
-        slideMargin: 0,
-        // mode: 'fade',
-        controls:false,
-        speed:2000,
-        auto:true,
-        pause:7000,
-      });
-    //   slider.play(); 
-    });
-  </script>
-<!--hết phần đầu-->
 
 <!-- Phần 2. Bảng tin-->
 <div class="container news-html " style="overflow:hidden ;" > 
@@ -199,7 +73,7 @@
                 <hr>
                 <div class="post-button">
                     <button class="read-more btn" data-toggle="modal" data-target="#myModal-1">Đọc thêm</button>
-                    <button class="donate-btn btn">Ủng Hộ</button>
+                   
                 </div>
             </div>
         </div>
@@ -227,7 +101,7 @@
                 <hr>
                 <div class="post-button">
                     <button class="read-more btn" data-toggle="modal" data-target="#myModal-2">Đọc thêm</button>
-                    <button class="donate-btn btn">Ủng Hộ</button>
+                   
                 </div>
             </div>
         </div>
@@ -256,7 +130,7 @@
                 <hr>
                 <div class="post-button">
                     <button class="read-more btn" data-toggle="modal" data-target="#myModal-3">Đọc thêm</button>
-                    <button class="donate-btn btn">Ủng Hộ</button>
+                   
                 </div>
             </div>
         </div>
@@ -283,7 +157,7 @@
                 <hr>
                 <div class="post-button">
                     <button class="read-more btn" data-toggle="modal" data-target="#myModal-4">Đọc thêm</button>
-                    <button class="donate-btn btn">Ủng Hộ</button>
+                   
                 </div>
             </div>
         </div>
@@ -312,7 +186,7 @@
                 <hr>
                 <div class="post-button">
                     <button class="read-more btn "  data-toggle="modal" data-target="#myModal-5">Đọc thêm</button>
-                    <button class="donate-btn btn">Ủng Hộ</button>
+                   
                 </div>
             </div>
         </div>
@@ -341,7 +215,7 @@
                 <hr>
                 <div class="post-button">
                     <button class="read-more btn">Đọc thêm</button>
-                    <button class="donate-btn btn">Ủng Hộ</button>
+                   
                 </div>
             </div>
         </div>
@@ -369,7 +243,7 @@
                 <hr>
                 <div class="post-button">
                     <button class="read-more btn">Đọc thêm</button>
-                    <button class="donate-btn btn">Ủng Hộ</button>
+                   
                 </div>
             </div>
         </div>
@@ -418,102 +292,7 @@
 </div>
 <!--hết button go to top ----------------------------->
 <!-- FOOTER ----------------------------- -->
-<div class="footer" style="overflow:hidden ;">
-    <div class=" container">
-        <div class="row text-center">
-            <div class="col-12">
-                <h1 class="display-5 content-title" data-aos="fade-up" data-aos-duration="1000">Đăng kí ngay</h1>
-                <div class="footer-form">
-                    <input type="text" name="" id="" class="footer-text" placeholder="Enter E-Mail Address" data-aos="slide-right">
-                    <button type="submit" value="Đăng kí" class="footer-btn " data-aos="slide-left">Đăng kí </button>
-                </div>
-                    
-            </div>
-        </div>
-        <div class="row container-content ">
-            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
-                <h5>
-                    Website
-                </h5>
-                <p>Trang web giúp các các nhân tổ chức ủng hộ và quyên góp, tổ chức các hoạt động từ thiện để giúp đỡ bà con nhân dân.</p>
-
-                        <!-- FOOTER SOCIAL    -->
-                <div class="footer-social">
-                    <div class="social-block">
-                        <a href="">
-                            <i class="fa fa-facebook-f" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="social-block">
-                        <a href="">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="social-block">
-                        <a href="">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="social-block">
-                        
-                    <a href="">
-                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                    </a>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
-                <h5>
-                    Địa chỉ liên hệ
-                </h5>
-                <ul>
-                    <li> 
-                        <i class="fas fa-map-marker-alt"></i> 470 Trần Đại Nghĩa, Hòa Hải, Ngủ Hành Sơn, Đà Nẵng
-                    </li>
-                    <li> 
-                        <i class="fas fa-phone-alt"> </i> +84971 164 9697
-                    </li>
-                    <li> 
-                        <i class="fas fa-envelope"></i> nguyenquelan</i>
-                    </li>
-                    <li> 
-                        <i class="fas fa-envelope"></i> phamgiahuy</i>
-                    </li>
-                    <!-- <li>
-                        <i class="fa fa-comment" aria-hidden="true"></i>
-                    </li> -->
-                    <!-- <li> 
-                        <i class="fas fa-map-marker-alt"> lkasjlkasj</i>
-                    </li> -->
-                </ul>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
-                <h5>
-                    Hợp pháp
-                </h5>
-                <ul>
-                    <li> <a href="">Tổ chức pháp lý</a></li>
-                    <li> <a href="">Điều khoản sử dụng</a></li>
-                    <li> <a href="">Quyền riêng tư</a></li>
-                    <li> <a href="">Đơn vị phân phối</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-12 col-footer" data-aos="slide-up" >
-                <h5>
-                    Về chúng tôi
-                </h5>
-                <ul>
-                    <li> <a href="">Ủng hộ</a></li>
-                    <li> <a href="">Tin tức</a></li>
-                    <li> <a href="">Blog</a></li>
-                    <li> <a href="">Liên hệ</a></li>
-                </ul>
-                
-            </div>
-        </div>
-    </div>
-</div>
+<?php include "include/footer.html"; ?>
 <!--hết footer------------------->
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

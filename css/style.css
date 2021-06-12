@@ -28,8 +28,17 @@ img{
     width: 100%;
 }
 
-button.btn.btn-link.collapsed{
+button.ink.collapsed{
     color: var(--text-color);
+}
+
+	@@ -107,9 +107,9 @@ header .navbar ul li a:hover{
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.19);
+    transition: 0.5s ease-in-out;
+}
+header .navbar .btn-nav{
+    border-radius:  30px;
+    /* border: 1px solid rgba(165,0,0) ; */
 }
 
 .bg-huong{
@@ -108,8 +117,11 @@ header .navbar ul li a:hover{
     transition: 0.5s ease-in-out;
 }
 header .navbar .btn-login{
-    border-radius:  20px;
-    border: 1px solid rgba(165,0,0) ;
+    border-radius: 30px;
+    /* border: 1px solid rgba(165,0,0) ; */
+}
+.color-bars{
+    color: var(--text-color);
 }
 
 /* Start-Content  */
@@ -263,7 +275,7 @@ header .navbar .btn-login{
         transition: 0.5s ease-in-out;
         margin-top: 30px;
         margin-bottom: 30px;
-        color: var(--text-color);
+        color: #fff;
     }
     .features-content .video{
         position: relative;
@@ -673,7 +685,7 @@ header .navbar .btn-login{
     height: 40px;
     border-radius: 10px;
     background-color: #2a015b;
-    color: var(--text-color);
+    color: #fff;
     border-color: #2a015b;
     margin-right: 10px;
     margin-top: 30px;
@@ -912,9 +924,12 @@ figcaption{
         cursor: pointer;
     }
     :root{
-        --bg-color: #000;
+        --text-color: #000;
         --bg-color: #fff;
         --slider-container: #eef4f8;
+    }
+    .dark-mode{
+        margin: auto;
     }
     .dark-theme{
          --bg-color: #1a191f;

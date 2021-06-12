@@ -1,3 +1,12 @@
+<?php
+session_start();
+//tiến hành kiểm tra là người dùng đã đăng nhập hay chưa
+//nếu chưa, chuyển hướng người dùng ra lại trang đăng nhập
+if (!isset($_SESSION['username'])) {
+	 header('Location: index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Apex Admin
+        Admin
     </title>
     <!-- JQUERY -->
     <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
@@ -26,165 +35,204 @@
     <!--ICON TITLE-->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 
 <body>
-
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-        <div class="sidebar-logo">
-            <a href="index.html">
-            <!-- <img src="./img/logo-lg.png" alt="Comapny logo"> -->
-            <img src="img/logo-charity-fund.png" style="height: 55px; width: auto;" alt="">
-            </a>
-            <div class="sidebar-close" id="sidebar-close">
-                <i class='bx bx-left-arrow-alt'></i>
-            </div>
-        </div>
-        <div class="sidebar-user">
-            <div class="sidebar-user-info">
-                <img src="./img/avt-huy.jpg" alt="User picture" class="profile-image">
-                <div class="sidebar-user-name">
-                    Phạm Gia Huy
-                </div>
-            </div> 
-            <button class="btn btn-outline" >
-                <a href="index.html">
-                    <i class='bx bx-log-out bx-flip-horizontal'></i>
-                </a>
-               
-            </button>
-        </div>
-        <!-- SIDEBAR MENU -->
-        <ul class="sidebar-menu">
-            <li>
-                <a href="user.html" class="active">
-                    <i class='bx bx-home'></i>
-                    <span>giao diện người dùng</span>
-                </a>
-            </li>
-            <li data-toggle="tooltip" data-placement="right" title="Tooltip on right">
-                <a href="#">
-                    <i class='bx bx-shopping-bag'></i>
-                    <span>Sản phẩm</span>
-                </a>
-            </li>
-            <li class="sidebar-submenu">
-                <a href="#" class="sidebar-menu-dropdown">
-                    <i class='bx bx-category'></i>
-                    <span>Dự án gây quỹ</span>
-                    <div class="dropdown-icon"></div>
-                </a>
-                <ul class="sidebar-menu sidebar-menu-dropdown-content">
-                    <li>
-                        <a href="">
-                            Danh sách
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#add-duan">
-                            Đề xuất dự án
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <!-- <li class="sidebar-submenu">
-                <a href="#" class="sidebar-menu-dropdown">
-                    <i class='bx bx-category'></i>
-                    <span>e-commerce</span>
-                    <div class="dropdown-icon"></div>
-                </a>
-                <ul class="sidebar-menu sidebar-menu-dropdown-content">
-                    <li>
-                        <a href="#">
-                            list product
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            add product
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            orders
-                        </a>
-                    </li>
-                </ul>
-            </li> -->
-            <li>
-                <a href="#">
-                    <i class='bx bx-mail-send'></i>
-                    <span>Email</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-chat'></i>
-                    <span>Tin nhắn</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-calendar'></i>
-                    <span>Lịch</span>
-                </a>
-            </li>
-            <li class="sidebar-submenu">
-                <a href="#" class="sidebar-menu-dropdown">
-                    <i class='bx bx-cog'></i>
-                    <span>Cài đặt</span>
-                    <div class="dropdown-icon"></div>
-                </a>
-                <ul class="sidebar-menu sidebar-menu-dropdown-content">
-                    <li>
-                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
-                            Phiên bản tối
-                            <span class="darkmode-switch"></span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <!-- END SIDEBAR MENU -->
-    </div>
-    <!-- END SIDEBAR -->
+    
+    <?php include "include/sidebar-admin.php"; ?>
 
     <!-- MAIN CONTENT -->
     <div class="main">
+        
         <div class="main-header">
             <div class="mobile-toggle" id="mobile-toggle">
                 <i class='bx bx-menu-alt-right'></i>
             </div>
             <div class="main-title">
-                    Thông tin người dùng
+                quản lý
             </div>
         </div>
         <div class="main-content">
+            <div class="row content-1">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Tổng lượt ủng hộ
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    6578
+                                </div>
+                                <i class='bx bx-credit-card-front'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                TỈ lệ chuyển đổi
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    30.5%
+                                </div>
+                                <i class='bx bx-chat'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Tổng tiền ủng hộ
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    1.234.500.000đ
+                                </div>
+                                <i class='bx bx-line-chart'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Lượt truy cập hằng ngày
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    690
+                                </div>
+                                <i class='bx bx-user'></i>
+                            </div>
+                        </div>
+                        <!-- END COUNTER -->
+                    </div>
+                </div>
+            </div>
 
             <div class="row content-2">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <!-- TOP PRODUCT -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Sản phẩm ủng hộ quỹ
+                        </div>
+                        <div class="box-body">
+                            <ul class="product-list">
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="./img/product1.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">
+                                                <a href=""></a>Tăm tre</div>
+                                            <div class="text-second">Dụng cụ vệ sinh</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$0,99</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="./img/product2.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Giày adidas</div>
+                                            <div class="text-second">Cloths</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$51,49</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="./img/product3.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Trái cây theo mùa</div>
+                                            <div class="text-second">Fruits</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$5,99</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="./img/product4.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Gạo quảng nam</div>
+                                            <div class="text-second">Food</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$5,930</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- % PRODUCT -->
+                </div>
+                <div class="col-4 col-md-6 col-sm-12">
+                    <!-- CATEGORY CHART -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Tỉ lệ ủng hộ
+                        </div>
+                        <div class="box-body">
+                            <div id="category-chart"></div>
+                        </div>
+                    </div>
+                    <!-- END CATEGORY CHART -->
+                </div>
                 <div class="col-5 col-md-12 col-sm-12">
                     <!-- CUSTOMERS CHART -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Lượt ủng hộ hàng tháng
+                        </div>
+                        <div class="box-body">
+                            <div id="customer-chart"></div>
+                        </div>
+                    </div>
+                    <!-- END CUSTOMERS CHART -->
                 </div>
                 <div class="col-12">
                     <!-- ORDERS TABLE -->
                     <div class="box">
-                        <div class="box-header" style="display: flex;justify-content: space-between;">
-                            <div class="">Ủng hộ của bạn</div>
-                            <div class="">Tổng tiền bạn đã ủng hộ <strong style="color: #17a2b8">1.500.000.000đ</strong></div>
+                        <div class="box-header">
+                            Ủng hộ gần dây
                         </div>
                         <div class="box-body overflow-scroll">
                             <table>
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Tên Chiến Dịch</th>
+                                        <th>Họ và tên</th>
                                         <th>Ngày</th>
                                         <th>Trạng thái</th>
+                                        <th>Trạng thái thanh toán</th>
                                         <th>Tổng cộng</th>
-                                        <th>Tiến độ </th>
-                                        <th>Chiến dịch</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -192,8 +240,8 @@
                                         <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <span>	
-                                                    Gây Dựng Quỹ Dựng Trường Mới Bản Huổi Chua</span>
+                                                <img src="./img/user-image.png" alt="user image">
+                                                <span>Nguyễn Quế Lân</span>
                                             </div>
                                         </td>
                                         <td>2021-05-09</td>
@@ -202,89 +250,101 @@
                                                 Sẵn sàng
                                             </span>
                                         </td>
-                                        <td>234.000.000đ</td>
-                                        <td>49%</td>
                                         <td>
-                                            <a href="charity-1.html" class="btn-info btn">Xem thêm</a>
+                                            <div class="payment-status payment-pending">
+                                                <div class="dot"></div>
+                                                <span>Đang chờ</span>
+                                            </div>
                                         </td>
+                                        <td>$123.45</td>
                                     </tr>
                                     <tr>
-                                        <td>#2346</td>
+                                        <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <span>Chung Tay Gây Quỹ Phẫu Thuật Cho 25 Em Bé Hở Môi</span>
+                                                <img src="./img/user-image-2.png" alt="user image">
+                                                <span>Phạm Gia Huy</span>
                                             </div>
                                         </td>
                                         <td>2021-05-09</td>
                                         <td>
                                             <span class="order-status order-shipped">
-                                                Đã xác nhận
+                                                Đã chuyển
                                             </span>
                                         </td>
-                                        <td>100.000.000đ</td>
-                                        <td>40%</td>
                                         <td>
-                                            <a href="charity-1.html" class="btn-info btn">Xem thêm</a>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
                                         </td>
+                                        <td>$123.45</td>
                                     </tr>
                                     <tr>
-                                        <td>#2347</td>
+                                        <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <span>	
-                                                    Quỹ Tặng Đồ Bảo Hộ Chống Covid-19</span>
+                                                <img src="./img/user-image-3.png" alt="user image">
+                                                <span>evelyn</span>
                                             </div>
                                         </td>
                                         <td>2021-05-09</td>
                                         <td>
                                             <span class="order-status order-shipped">
-                                                Đã xác nhận
+                                                Đã chuyển
                                             </span>
                                         </td>
-                                        <td>100.000.000đ</td>
-                                        <td>90%</td>
                                         <td>
-                                            <a href="charity-1.html" class="btn-info btn">Xem thêm</a>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
                                         </td>
+                                        <td>$123.45</td>
                                     </tr>
                                     <tr>
-                                        <td>#2348</td>
+                                        <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <span>	
-                                                    Ủng Hộ Gia Đình Của Tâm Gương Tuổi Trẻ Anh Dũng Cứu Bạn Đuối Nước</span>
+                                                <img src="./img/user-image-2.png" alt="user image">
+                                                <span>John doe</span>
                                             </div>
                                         </td>
                                         <td>2021-05-09</td>
                                         <td>
                                             <span class="order-status order-shipped">
-                                                Đã xác nhận
+                                                Đã chuyển
                                             </span>
                                         </td>
-                                        <td>100.000.000đ</td>
-                                        <td>90%</td>
                                         <td>
-                                            <a href="charity-1.html" class="btn-info btn">Xem thêm</a>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
                                         </td>
+                                        <td>$123.45</td>
                                     </tr>
                                     <tr>
-                                        <td>#2349</td>
+                                        <td>#2345</td>
                                         <td>
                                             <div class="order-owner">
-                                                <span>Chung Tay Gây Quỹ Phòng, Chống Dịch Covid-19 Tại Đà Nẵng</span>
+                                                <img src="./img/user-image-3.png" alt="user image">
+                                                <span>evelyn</span>
                                             </div>
                                         </td>
                                         <td>2021-05-09</td>
                                         <td>
                                             <span class="order-status order-shipped">
-                                                Đã xác nhận
+                                                Đã chuyển
                                             </span>
                                         </td>
-                                        <td>100.000.000đ</td>
-                                        <td>90%</td>
                                         <td>
-                                            <a href="charity-1.html" class="btn-info btn">Xem thêm</a>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Đã thanh toán</span>
+                                            </div>
                                         </td>
+                                        <td>$123.45</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -312,7 +372,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable " role="document">
           <div class="modal-content">
             <div class="modal-header">
-                <strong class="modal-title" id="myModalLabel">Đề xuất dự án gây quỹ</strong>
+                <strong class="modal-title" id="myModalLabel">Thêm dự án</strong>
               <button type="button" class="close" id="off" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
               </button>
@@ -356,7 +416,7 @@
                     
             </div>
             <div class="modal-footer">
-              <button class="btn btn-success" id="btnsubmit">Gửi thông tin</button>
+              <button class="btn btn-success" id="btnsubmit">Đăng tải</button>
             </div>
           </div>
         </div>
@@ -368,7 +428,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body">
-                     <p> <i class="bi bi-check-circle-fill"></i> Gửi thông tin thành công.</p>
+                     <p> <i class="bi bi-check-circle-fill"></i> Đăng tải dự án thành công.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-warning confirmclosed">Thoát</button>
