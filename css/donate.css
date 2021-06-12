@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+.form-donate{
+    position: relative;
+    width: 500px;
+    margin: 50px auto;  
+    padding: 20px;
+    border-radius: 5px;
+    background-color:rgba(151, 165, 151, 0.432);
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+}
 .donate-form{
-    height: fit-content;
-    border: white 1px solid;
-    padding: 20px 40px;
     margin-top: 10px;
     margin-bottom: 40px;
-    border-radius: 16px;
-    background: linear-gradient(315deg, #d7d4d4, #fffdfd);
-    box-shadow:  -16px -16px 32px #e3e0e0,
-             16px 16px 32px #fbf8f8;
-}
-.btn-ungho{
+} 
+.btn-ungho {
     background-color: #FF685B;
     margin-top: 20px;
     color: white;
@@ -23,20 +27,31 @@
 .title{
     margin-top: 20px;
 }
- .anh-chuong-trinh{
-    margin-top: 10px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    width: 537px;
+ 
+img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
     position: fixed;
-    top: 70px; 
-    position: -webkit-sticky; 
-    position: sticky;
-}
-.anh-chuong-trinh img{
-    border-radius: 3%;
-    box-shadow:  -16px -16px 32px #e3e0e0,
-             16px 16px 32px #fbf8f8;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  @media screen and (max-width: 1024px) { 
+    img.bg {
+      left: 50%;
+      margin-left: -512px;  
+    }
+  }
+
+.inputbox > label{
+    margin-top: .5rem;
+    margin-bottom: 0px;
+    font-weight: 800;
+    opacity: 0.8;
 }
 
 label.radio {
@@ -66,6 +81,10 @@ label.radio input:checked+span {
     border-color: #FF685B;
     background-color: #FF685B;
     color: #fff
+}
+.method-payment{
+    justify-content: space-between;
+    display: flex;
 }
 
 

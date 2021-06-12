@@ -41,36 +41,36 @@
 </head>
 
 <body>
+
     <div class="container-fluid" style="position: relative;">
-        <!-- Animation scroll header - navbar  -->
-        <style>
-            .color-black{color: black;}
-            .color-white{
-                color: white;}
-        </style>
         <script>
             $(window).on('scroll',function(){
                 if($(window).scrollTop()>20){
                     $('header').addClass('bg-huong');
                     $('header').addClass('animate__fadeInDown animate__animated ');
                     $('.nav-link').css({
-                        "color" : "var(--text-color)"
+                        "color" : "black"
                     });
                 }
                 else{
                     $('header').removeClass('bg-huong');
                     $('header').removeClass('animate__fadeInDown animate__animated ');
-                    $('.nav-link').css({
-                        "color" : "var(--bg-color)"
-                    });
+                    // $('.nav-link').css({
+                    //     "color" : "var(--bg-color)"
+                    // });
                 }
             });
             // Chạy chữ
             
         </script>
-        <!-- Hiệu ứng -->
-
         <header>
+            <style>
+
+                header .navbar ul li a{
+                    color: black;
+                
+                }
+            </style>
             <div class="navbar navbar-expand-md container-fluid">
                 <a href="index.html" class="logo" style="display: block; ">
                     <img src="img/logo-charity-fund.png" style="height: 55px; width: auto;" alt="">
@@ -81,280 +81,161 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a href="index.html" class="nav-link">Trang chủ</a>
-                        </li>
+                            <a href="index.html" class="nav-link btn-nav">Trang chủ</a></li>
                         <li class="nav-item">
-                            <a href="ungho.html" class="nav-link">Ủng hộ</a>
-                        </li>
+                            <a href="charity.html" class="nav-link btn-nav">Ủng hộ</a></li>
                         <li class="nav-item">
-                            <a href="news.html" class="nav-link">Tin tức</a>
-                        </li>
+                            <a href="news.html" class="nav-link btn-nav">Tin tức</a></li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Liên hệ</a>
-                        </li>
-
+                            <a href="contact.html" class="nav-link btn-nav">Liên hệ</a></li>
                     </ul>
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto" >
                         <li class="nav-item">
-                            <a href="#" class="nav-link btn-login" type="button" id="button-login"
-                                onclick="on_login()">Login</a>
-                        </li>
+                            <!-- type="button" name="" id="button-login" class="btn btn-primary btn-lg btn-block" onclick="on_login()" -->
+                            <a href="#" class="nav-link btn-nav " type="button" id="button-login" onclick="on_login()">Đăng nhập</a></li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link btn-nav">
                                 <i class="fas fa-search"></i>
-                            </a>
-                        </li>
-
-
+                            </a></li>
                     </ul>
                 </div>
             </div>
+            
         </header>
+        
 
-        <!-- Phần đầu  -->
-        <div class="start-content" style="overflow:hidden ;">
-            <div class="d-flex align-items-center content-start">
-                <h1 class="text-center" data-aos="zoom-in">Cho Đi Là Còn Mãi</h1>
-                <p class="" data-aos="zoom-in">
-                    Một từ ủng hộ trong lúc thất bại đáng giá hơn nhiều một giờ khen ngợi sau khi đã thành công.
-                </p>
-                <button class="btn" data-aos="zoom-out-up">
-                    Tham gia ngay
-                </button>
-            </div>
-        </div>
-
+       
         <!--ỦNG HỘ-->
-        <div class="container" >
-            <div class="row col-12">
-                <div class="col-12 text-center title">
-                    <h2 data-aos="fade-up" data-aos-duration="1000">Ủng Hộ</h2>
-                </div>
-                <div class="donate-form col-6" data-aos="slide-right">
-                    <div class="content">
-                        <form action="">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <small>Chương Trình</small>
-                                        <select class="form-control" name="exampleFormControlSelect1"
-                                            id="exampleFormControlSelect1">
-                                            <option data-divid="img/1.jpg" value="1">Bão lũ miền trung</option>
-                                            <option data-divid="img/4.jpg" value="2">Covid-19</option>
-                                            <option data-divid="img/donate-2.jpg" value="3">Xây dựng nhà ở vùng cao</option>
-                                            <option data-divid="img/donate-3.jpg" value="4">Trẻ em khuyết tật</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row g-2">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <small>Họ Và Tên</small>
-                                        <input type="text" class="form-control"  required>
-                                        <!-- <div class="help-block with-errors"></div> -->
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group"> <small>Ngày Sinh</small>
-                                        <input type="text" class="form-control" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row g-2">
-                                <div class="col-md-6">
-                                    <div class="inputbox"> <small>Email</small>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp"  required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="inputbox"> <small>Số điện thoại</small>
-                                        <input type="text" class="form-control" name="" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <small>Message</small>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                            rows="4" required></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="inputbox">
-                                        <small>Số tiền </small>
-                                        <input type="text" class="form-control" name="currency-field"
-                                            id="currency-field"  value=""
-                                            data-type="currency" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-3">
-                                <small>Phương thức thanh toán</small>
-                                <div class="d-flex flex-row" >
-                                    <label class="radio1">
-                                        <input type="radio" name="payment" value="bank" >
-                                        <span><i class="fa fa-bank"></i> BANK TRANSFER</span>
-                                    </label>
-                                    <label class="radio1">
-                                        <input type="radio" name="payment" value="card">
-                                        <span><i class="fa fa-credit-card-alt"></i> CREDIT CARD</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="row g-2">
-                                <div class="col-md-6">
-                                    <div class="inputbox"> <small>Số Thẻ</small>
-                                        <input type="text" data-type="numbers" class="form-control" name="" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="inputbox "> <small>Tên Thẻ</small>
-                                        <input type="text" class="form-control name-card" name="" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row g-2">
-                                <div class="col-md-6">
-                                    <div class="row g-2">
-                                        <div class="col-md-6">
-                                            <div class="inputbox"> <small>Ngày</small>
-                                                <input type="text" class="form-control" name="" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputbox"> <small>Tháng</small>
-                                                <input type="text" class="form-control" name="" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="inputbox"> <small>CVV</small>
-                                        <input type="text" class="form-control" name="" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <button class="btn btn-ungho btn-block" ondblclick="ungho()" on>Ủng Hộ</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="anh-chuong-trinh">
-                        <img src="img/1.jpg" alt="" class="image-swap" data-aos="slide-left">
-                    </div>
-                </div>
+            <img src="img/ungho7.1.jpg" alt="" class="bg image-swap" >        
+         <div class="row form-donate" style="margin-top: 15vh;">
+             <div class="col-12 text-center title">
+                <h2 style="font-weight: 600; color: #FF685B;">Ủng Hộ</h2>
             </div>
-        </div>
+            <div class="donate-form " >
+                <div class="content">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="inputbox">
+                                    <label for="">Chương trình</label>
+                                    <select class="form-control" name="exampleFormControlSelect1"
+                                        id="exampleFormControlSelect1">
+                                        <option data-divid="img/ungho7.1.jpg" value="1">Gây quỹ chống dịch Đà Nẵng</option>
+                                        <option data-divid="img/donate-4.jpg" value="2">Giúp trẻ em nghèo vùng Trà Giáp</option>
+                                        <option data-divid="img/ungho-2.1.jpg" value="3">25 em bé hở môi</option>
+                                        <option data-divid="img/ungho4.1.jpg" value="4">Xây dựng cầu cho vùng cao</option>
+                                        <option data-divid="img/ungho3.1.jpg" value="5">Tặng đồ bảo hộ chống covid</option>
+                                        <option data-divid="img/ungho5.1.jpg" value="6">Xây dựng ngôi Nhà hạnh phúc cho em Hồ Thị Chúc</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md-6 inputbox">
+                                <label for="">Họ và tên</label>
+                                    <input type="text" class="form-control"  required>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="inputbox"> <label for="">Số điện thoại</label>
+                                    <input type="text" class="form-control" name="" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="inputbox"> <label for="">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp"  required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <div class="inputbox"> <label for="">Địa chỉ</label>
+                                    <input type="text" class="form-control" 
+                                       required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="inputbox">
+                                    <label for="">Lời nhắn</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                        rows="4" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="inputbox">
+                                    <label for="">Số tiền</label>
+                                    <input type="text" class="form-control" name="currency-field"
+                                        id="currency-field"  value=""
+                                        data-type="currency" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputbox">
+                            <label for="">Phương thức thanh toán</label>
+                            <div class="method-payment" >
+                                <label class="radio1">
+                                    <input type="radio" name="payment" value="bank" checked="checked" >
+                                    <span><i class="fa fa-bank"></i> BANK TRANSFER</span>
+                                </label>
+                                <label class="radio1">
+                                    <input type="radio" name="payment" value="card">
+                                    <span><i class="fa fa-credit-card-alt"></i> CREDIT CARD</span>
+                                </label>
+                            </div>
+                        </div> 
+                        <div class="row g-2">
+                            <div class="col-md-6">
+                                <div class="inputbox"><label for="">Số thẻ</label>
+                                    <input type="text" data-type="numbers" class="form-control" name="" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="inputbox "> <label for="">Tên thẻ</label>
+                                    <input type="text" class="form-control name-card" name="" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md-6">
+                                <div class="row g-2">
+                                    <div class="col-md-6">
+                                        <div class="inputbox"> <label for="">Tháng</label>
+                                            <input type="text" class="form-control" name="" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputbox"><label for="">Năm</label>
+                                            <input type="text" class="form-control" name="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="inputbox"><label for="">CVV</label>
+                                    <input type="text" class="form-control" name="" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-ungho btn-block" ondblclick="ungho()" on>Ủng Hộ</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div> 
+    </div> 
         <script>
             function ungho() {
                 alert('Bạn đã ủng hộ tiền thành công, hệ thống sẽ ghi nhận và cập nhật cho bạn sớm nhất có thể. Xin chân thành cảm ơn!')
             }
         </script>
-
-        <!-- FOOTER ----------------------------- -->
-        <div class="footer" style="overflow:hidden ;">
-            <div class=" container">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <h1 class="display-5 content-title" data-aos="fade-up" data-aos-duration="1000">Đăng kí ngay
-                        </h1>
-                        <div class="footer-form">
-                            <input type="text" name="" id="" class="footer-text" placeholder="Enter E-Mail Address"
-                                data-aos="slide-right">
-                            <button type="submit" value="Đăng kí" class="footer-btn " data-aos="slide-left">Đăng kí
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row container-content ">
-                    <div class="col-md-5 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
-                        <h5>
-                            Website
-                        </h5>
-                        <p>Trang web giúp các các nhân tổ chức ủng hộ và quyên góp, tổ chức các hoạt động từ thiện để
-                            giúp đỡ bà con nhân dân.</p>
-
-                        <!-- FOOTER SOCIAL    -->
-                        <div class="footer-social">
-                            <div class="social-block">
-                                <a href="">
-                                    <i class="fa fa-facebook-f" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="social-block">
-                                <a href="">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="social-block">
-                                <a href="">
-                                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="social-block">
-
-                                <a href="">
-                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
-                        <h5>
-                            Địa chỉ liên hệ
-                        </h5>
-                        <ul>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i> 470 Trần Đại Nghĩa, Hòa Hải, Ngủ Hành Sơn, Đà Nẵng
-                            </li>
-                            <li>
-                                <i class="fas fa-phone-alt"> </i> +84971 164 9697
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i> nguyenquelan</i>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i> phamgiahuy</i>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
-                        <h5>
-                            Hợp pháp
-                        </h5>
-                        <ul>
-                            <li> <a href="">Tổ chức pháp lý</a></li>
-                            <li> <a href="">Điều khoản sử dụng</a></li>
-                            <li> <a href="">Quyền riêng tư</a></li>
-                            <li> <a href="">Đơn vị phân phối</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12 col-footer" data-aos="slide-up">
-                        <h5>
-                            Về chúng tôi
-                        </h5>
-                        <ul>
-                            <li> <a href="">Ủng hộ</a></li>
-                            <li> <a href="">Tin tức</a></li>
-                            <li> <a href="">Blog</a></li>
-                            <li> <a href="">Liên hệ</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!--button go to top-->
         <script>
