@@ -49,7 +49,7 @@ session_start();
     <div class="container-fluid" style="position: relative;">
        
         <?php 
-            include "include/header.html";
+            include "./include/header.html";
         ?>
 
     
@@ -762,7 +762,7 @@ session_start();
         </div>
 
         <!-- FOOTER ----------------------------- -->
-        <?php include "include/footer.html"; ?>
+        <?php include "./include/footer.html"; ?>
 
         <!--button go to top-->
         <script>

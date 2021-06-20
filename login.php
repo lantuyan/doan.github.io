@@ -1,6 +1,9 @@
 <?php
 session_start();
 ?>
+<script src="./js/sweetalert2.all.min.js"></script>
+<script>Swal.fire('Any fool can use a computer')
+</script>
     <?php
             //  $conn =mysqli_connect("localhost:3306","root","117006lan","bwd") or die("Không thể kết nối đến database");
             //  mysqli_query($conn,"SET NAMES 'UTF8'");
@@ -14,7 +17,7 @@ session_start();
                 $password = strip_tags($password);
                 $password = addslashes($password);
                 if ($username == "" || $password =="") {
-                    echo "<script type='text/javascript'>alert('Tài khoản hoặc mật khẩu không được để trống');</script>";
+                    echo "<script type='text/javascript'> alert('Không được để trống tài khoản mật khẩu');</script>";
                 }
                 else {
                     $sql = "select * from users where username ='$username' and password= '$password' and service = '1'";
@@ -256,6 +259,7 @@ session_start();
             location.replace("/index.php");
          }
      </script>
+    
   
     </div>
 
@@ -271,4 +275,3 @@ session_start();
 
 
 
-<

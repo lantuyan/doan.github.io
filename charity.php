@@ -337,7 +337,7 @@
                                 </div>
                         </div>
                         <div class="donate-slider">
-                            <button class="donate-btn btn" onclick="window.location.href='charity-1.html' ">Ủng hộ</button>
+                            <button class="donate-btn btn" onclick="window.location.href='charity-1.php' ">Ủng hộ</button>
                         </div>
                         
                     </div>

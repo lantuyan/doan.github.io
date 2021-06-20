@@ -15,7 +15,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 10000;
+    /* z-index: 10000; */
     background-image: linear-gradient(0deg,rgba(233, 230, 231, 0.7) ,rgba(168,237,234,0.4))
     ,url(img/2.jpg);
     height: 100vh;

@@ -8,8 +8,9 @@
     padding: 25px 30px;
     /* max-width: 100%; */
 
-   
+  
 }
+
 .sticky{
     position: fixed;
     top:95px;
@@ -96,3 +97,11 @@
     padding: 10px 0px 0px 0px;
 }
 
+@media screen and (max-width:768px) {
+    .sticky{
+      position: relative !important;
+    }
+    .height-box {
+        margin-top:0px !important;
+    }
+}

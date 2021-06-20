@@ -42,7 +42,7 @@ if (!isset($_SESSION['username'])) {
     <!-- SIDEBAR -->
     <div class="sidebar">
         <div class="sidebar-logo">
-            <a href="index.html">
+            <a href="index.php">
             <!-- <img src="./img/logo-lg.png" alt="Comapny logo"> -->
             <img src="img/logo-charity-fund.png" style="height: 55px; width: auto;" alt="">
             </a>
@@ -73,7 +73,7 @@ if (!isset($_SESSION['username'])) {
                 </div>
             </div> 
             <button class="btn btn-outline" >
-                <a href="index.html">
+                <a href="index.php">
                     <i class='bx bx-log-out bx-flip-horizontal'></i>
                 </a>
                
@@ -82,15 +82,15 @@ if (!isset($_SESSION['username'])) {
         <!-- SIDEBAR MENU -->
         <ul class="sidebar-menu">
             <li>
-                <a href="user.html" class="active">
+                <a href="user.php" class="active">
                     <i class='bx bx-home'></i>
                     <span>giao diện người dùng</span>
                 </a>
             </li>
             <li data-toggle="tooltip" data-placement="right" title="Tooltip on right">
-                <a href="#">
+                <a href="./ungho.html" >
                     <i class='bx bx-shopping-bag'></i>
-                    <span>Sản phẩm</span>
+                    <span>Ủng hộ ngay</span>
                 </a>
             </li>
             <li class="sidebar-submenu">
@@ -228,7 +228,7 @@ if (!isset($_SESSION['username'])) {
                                         <td>234.000.000đ</td>
                                         <td>49%</td>
                                         <td>
-                                            <a href="charity-1.html" class="btn-info btn">Xem thêm</a>
+                                            <a href="charity-1.php" class="btn-info btn">Xem thêm</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -247,7 +247,7 @@ if (!isset($_SESSION['username'])) {
                                         <td>100.000.000đ</td>
                                         <td>40%</td>
                                         <td>
-                                            <a href="charity-1.html" class="btn-info btn">Xem thêm</a>
+                                            <a href="charity-1.php" class="btn-info btn">Xem thêm</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -267,7 +267,7 @@ if (!isset($_SESSION['username'])) {
                                         <td>100.000.000đ</td>
                                         <td>90%</td>
                                         <td>
-                                            <a href="charity-1.html" class="btn-info btn">Xem thêm</a>
+                                            <a href="charity-1.php" class="btn-info btn">Xem thêm</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -287,7 +287,7 @@ if (!isset($_SESSION['username'])) {
                                         <td>100.000.000đ</td>
                                         <td>90%</td>
                                         <td>
-                                            <a href="charity-1.html" class="btn-info btn">Xem thêm</a>
+                                            <a href="charity-1.php" class="btn-info btn">Xem thêm</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -306,7 +306,7 @@ if (!isset($_SESSION['username'])) {
                                         <td>100.000.000đ</td>
                                         <td>90%</td>
                                         <td>
-                                            <a href="charity-1.html" class="btn-info btn">Xem thêm</a>
+                                            <a href="charity-1.php" class="btn-info btn">Xem thêm</a>
                                         </td>
                                     </tr>
                                 </tbody>

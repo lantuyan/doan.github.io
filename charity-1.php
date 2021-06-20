@@ -43,12 +43,14 @@
 
 </head>
 <body>
+        
     <div class="container-fluid" style="position: relative;">
         <!-- Animation scroll header - navbar  -->
          <style>
             header .navbar ul li a{
                 color: black;
             }
+           
         </style>
         <script>
           $(window).on('scroll',function(){
@@ -92,7 +94,7 @@
                 <ul class="navbar-nav ml-auto" >
                     <li class="nav-item">
                         <!-- type="button" name="" id="button-login" class="btn btn-primary btn-lg btn-block" onclick="on_login()" -->
-                        <a href="login.php" class="nav-link btn-login" type="button" id="button-login" >Login</a></li>
+                        <a href="login.php" class="nav-link btn-login" type="button" id="button-login" >Đăng nhập</a></li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="fas fa-search"></i>
@@ -638,7 +640,7 @@
                                     <button class="donate-btn btn btn-ungho" onclick="window.location.href='ungho.html' ">Ủng Hộ</button>
                                 </div>
                                 <div class="col-12 btn-content" style="padding: 0;">
-                                    <button class="donate-btn btn  btn-info">Hướng dẫn Ủng hộ</button>
+                                    <button class="donate-btn btn  btn-info" onclick="huongdan()" >Hướng dẫn Ủng hộ</button>
                                 </div>
                                 <hr>
                                 <div class="text-company" style="font-weight: 600;">
@@ -1011,6 +1013,34 @@
             window.addEventListener('load', AOS.refresh); });
                 
         </script>
+            <script src="package/dist/sweetalert2.all.min.js"></script>
+         <script>
+             function huongdan() {
+                Swal.fire({
+                title: 'HƯỚNG DẪN ỦNG HỘ',
+                // imageUrl: './img/how-to.jpg',
+                // imageWidth: 400,
+                // imageHeight: 200,
+                html:
+                   '<hr style="border:1px solid black">' +
+                    '<h2><b>Quản lý ủng hộ</b></h2>' +
+                    '<img src="./img/unghongay.jpg" alt="">' +
+                    '<p>Để dễ dàng quản lý số tiền đã ủng hộ, quyên góp một cách chuyên nghiệp bạn hãy đăng kí tài khoản ngay tại đây</p> <br> ' +
+                    '<div class="col-12 btn-content" style="padding: 0;"><button class="donate-btn btn btn-info" onclick="window.location.href=\'login.php\'">Đăng kí</button> </div>' +
+                    
+                    '<hr>' +
+                    '<h2><b>Ủng hộ nhanh </b></h2>' +
+                    '<p>Ủng hộ nhanh mà không cần đăng kí, tiến trình quyên góp của bạn sẽ được cập nhật trên bài viết và gửi về qua địa chỉ email</p> <br> ' +
+                    '<div class="col-12 btn-content" style="padding: 0;"><button class="donate-btn btn btn-ungho" onclick="window.location.href=\'ungho.html\'">Ủng hộ ngay</button> </div>' +
+                    '',
+                focusConfirm: false,
+                confirmButtonText:
+                    '<i class="fa fa-thumbs-up"></i> Đã rõ!',
+                confirmButtonAriaLabel: 'Thumbs up, great!',
+                })
+             };
+           
+         </script>
 
 
     
