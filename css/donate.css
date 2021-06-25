@@ -38,6 +38,7 @@ img.bg {
     left: 0;
     background-position: center;
     background-size: cover;
+    opacity: 0.8;
   }
   
   @media screen and (max-width: 1024px) { 
@@ -46,13 +47,21 @@ img.bg {
       margin-left: -512px;  
     }
   }
-
+  @media screen and (max-width: 768px) {
+      .inputbox {
+          margin-top: 10px !important;
+      }
+    }
 .inputbox > label{
     margin-top: .5rem;
     margin-bottom: 0px;
     font-weight: 800;
     opacity: 0.8;
 }
+.inputbox{
+    margin-top: 20px;
+}
+
 
 label.radio {
     cursor: pointer
@@ -88,6 +97,7 @@ label.radio input:checked+span {
 }
 
 
+
 label.radio1 {
     cursor: pointer;
     width: 100%;
@@ -119,7 +129,8 @@ label.radio1 input:checked+span {
 }
 
 .form-control {
-    border: 2px solid #ced4da
+    border: 1px solid #ced4da;
+    height: 44px;
 }
 
 .form-control:focus {
